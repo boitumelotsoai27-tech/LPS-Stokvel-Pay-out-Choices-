@@ -1,0 +1,2369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2025/26 Stokvel Payout Choices – Lengau People Society</title>
+  <!-- Load Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Load Google Font: Inter for senior-friendly legibility -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Senior-friendly accessible root font scaling */
+    html {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 19px;
+      scroll-behavior: smooth;
+    }
+
+    html.extra-large-text {
+      font-size: 23px;
+    }
+
+    body {
+      background-color: #FAF8F5;
+      color: #1C2522;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* High-contrast focus rings for keyboard and touch accessibility */
+    input:focus, button:focus, select:focus, summary:focus {
+      outline: 4px solid #B45309;
+      outline-offset: 2px;
+    }
+
+    /* Option card states */
+    .option-card {
+      transition: all 0.2s ease;
+    }
+
+    .option-card:hover {
+      border-color: #1B5E20;
+      background-color: #F2F7F2;
+    }
+
+    .option-card.selected {
+      border-color: #1B5E3A;
+      background-color: #E8F3ED;
+      box-shadow: 0 4px 14px rgba(27, 94, 58, 0.14);
+    }
+
+    .option-card.selected-warning {
+      border-color: #B45309;
+      background-color: #FEF7EC;
+      box-shadow: 0 4px 14px rgba(180, 83, 9, 0.14);
+    }
+
+    /* Print styling for official receipts */
+    @media print {
+      body {
+        background-color: #FFFFFF !important;
+        color: #000000 !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      #receipt-view {
+        box-shadow: none !important;
+        border: 2px solid #000000 !important;
+        margin: 0 !important;
+        padding: 1.5rem !important;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-amber-200 selection:text-black">
+
+  <!-- TOP ACCESSIBILITY BAR -->
+  <header class="no-print sticky top-0 z-30 bg-[#1B5E3A] text-white shadow-md border-b-4 border-[#B45309]">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2.5">
+        <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white text-[#1B5E3A] font-extrabold text-lg" aria-hidden="true">L</span>
+        <span class="font-bold tracking-tight text-base sm:text-lg">Lengau People Society</span>
+      </div>
+
+      <!-- One-Tap Text Size Toggle -->
+      <button
+        id="text-size-toggle"
+        type="button"
+        aria-pressed="false"
+        class="inline-flex items-center gap-2 bg-white text-[#1C2522] hover:bg-amber-100 active:scale-[0.99] font-bold px-4 py-2.5 rounded-xl border-2 border-amber-300 shadow-sm text-base transition cursor-pointer"
+      >
+        <svg class="w-5 h-5 text-[#1B5E3A] shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h10m-10 6h6m10-3l-3-3m0 0l-3 3m3-3v8" />
+        </svg>
+        <span id="text-size-label">Text Size: Normal (Tap to Enlarge)</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="w-full max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-10 flex-grow">
+
+    <!-- SOCIETY HEADER BANNER -->
+    <section class="bg-white rounded-2xl border-2 border-stone-300 shadow-sm p-6 sm:p-8 mb-8">
+      <div class="inline-block bg-[#E8F3ED] text-[#1B5E3A] font-bold px-4 py-1.5 rounded-lg border border-[#1B5E3A]/30 text-base mb-3">
+        Lengau People Society • 2025/26 Member Payout Portal
+      </div>
+      <h1 class="text-2xl sm:text-4xl font-extrabold text-[#1C2522] leading-tight mb-3">
+        2025/26 Stokvel Payout Choices
+      </h1>
+      <p class="text-stone-700 text-lg mb-5">
+        Welcome! Please follow the <strong>3 simple steps</strong> below to tell us what you would like to do with your 2025/26 stokvel money. Take your time—everything is clearly explained.
+      </p>
+
+      <!-- Closing Date & Private Help Box -->
+      <div class="bg-amber-50 border-2 border-[#B45309] rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-5">
+        <div class="flex items-start gap-3">
+          <svg class="w-7 h-7 text-[#B45309] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          <div>
+            <p class="font-extrabold text-[#1C2522]">Closing Date: 30th November 2026</p>
+            <p class="text-stone-800 text-base">Please submit your choice on or before 30th November 2026.</p>
+          </div>
+        </div>
+        <div class="text-sm sm:text-base bg-white px-3.5 py-2.5 rounded-lg border border-amber-300 text-stone-800 font-medium">
+          Need help? Message the society secretary privately (do not post your choice in the group).
+        </div>
+      </div>
+
+      <!-- COLLAPSIBLE SIMPLE INSTRUCTIONS -->
+      <details class="group bg-[#FAF8F5] border-2 border-stone-400 rounded-xl overflow-hidden">
+        <summary class="list-none cursor-pointer p-4 sm:p-5 flex items-center justify-between gap-3 font-extrabold text-lg text-[#1B5E20] hover:bg-[#F2F7F2] transition">
+          <span class="flex items-center gap-2.5">
+            <svg class="w-7 h-7 text-[#1B5E20] shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>Need Help? Read Simple Instructions First</span>
+          </span>
+          <span class="text-sm font-bold bg-white border border-stone-300 px-3 py-1 rounded-lg text-stone-700 group-open:hidden">Tap to Open</span>
+          <span class="text-sm font-bold bg-white border border-stone-300 px-3 py-1 rounded-lg text-stone-700 hidden group-open:inline">Tap to Close</span>
+        </summary>
+        <div class="p-4 sm:p-5 pt-2 border-t-2 border-stone-300 space-y-3 text-base text-stone-800 bg-white">
+          <p class="font-bold text-[#1C1917]">What do the key words mean?</p>
+          <ul class="space-y-2.5 pl-1">
+            <li class="flex items-start gap-2.5">
+              <span class="inline-block bg-emerald-100 text-emerald-900 font-extrabold text-xs px-2.5 py-1 rounded-md border border-emerald-400 shrink-0 mt-0.5">TAKE</span>
+              <span>Money paid out to you in cash / EFT now.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="inline-block bg-blue-100 text-blue-900 font-extrabold text-xs px-2.5 py-1 rounded-md border border-blue-400 shrink-0 mt-0.5">LEAVE</span>
+              <span>Money you keep safely saved inside the Lengau Stokvel.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="inline-block bg-amber-100 text-amber-950 font-extrabold text-xs px-2.5 py-1 rounded-md border border-amber-400 shrink-0 mt-0.5">LOAN / LEND / TOP UP</span>
+              <span>Money you put toward society lending, loan/top-up arrangements, or topping up.</span>
+            </li>
+          </ul>
+          <p class="text-stone-700 pt-1">
+            <strong>Tip:</strong> Type your Membership Number in Step 1 first. Our instant lookup checks the pre-loaded <strong>1,706-record spreadsheet database</strong> and live portal entries automatically.
+          </p>
+        </div>
+      </details>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- VIEW 1: MEMBER PAYOUT CHOICE FORM                                     -->
+    <!-- ===================================================================== -->
+    <form id="payout-form" novalidate class="space-y-8">
+
+      <!-- GLOBAL INLINE ALERT BOX (Used for validation & already-recorded alerts) -->
+      <div id="form-alert" role="alert" class="hidden rounded-2xl border-2 p-5 shadow-sm">
+        <div class="flex items-start gap-3.5">
+          <svg class="w-8 h-8 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+          </svg>
+          <div class="space-y-2 flex-1">
+            <h2 id="form-alert-title" class="font-extrabold text-xl">Please Check Your Form</h2>
+            <div id="form-alert-body" class="text-base leading-relaxed"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 1: MEMBER DETAILS & INSTANT 1,706-RECORD LOOKUP BANNER -->
+      <section class="bg-white rounded-2xl border-2 border-stone-300 shadow-sm p-6 sm:p-8" aria-labelledby="step1-heading">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#1B5E3A] text-white font-extrabold text-xl shrink-0">1</span>
+          <h2 id="step1-heading" class="text-2xl font-extrabold text-[#1C2522]">Your Member Details</h2>
+        </div>
+        <p class="text-stone-700 mb-6">
+          Type your Membership Number first. An instant lookup banner will immediately check if your choice is already recorded in the <strong>1,706-record Excel database</strong> or portal.
+        </p>
+
+        <div class="space-y-6">
+          <!-- Membership Number -->
+          <div>
+            <label for="membership-no" class="block font-extrabold text-[#1C2522] mb-2">
+              Your Membership Number <span class="text-red-700">*</span>
+            </label>
+            <input
+              type="text"
+              id="membership-no"
+              name="membershipNo"
+              placeholder="e.g. LPS-0001 or 1"
+              class="w-full min-h-[60px] px-4 py-3.5 text-lg font-bold uppercase tracking-wider bg-[#FAF8F5] border-2 border-stone-400 rounded-xl text-[#1C2522] placeholder:text-stone-500 placeholder:normal-case placeholder:font-normal placeholder:tracking-normal"
+              required
+            />
+            <p class="mt-1.5 text-stone-600 text-base">
+              Enter your membership number (such as <strong>LPS-0001</strong> through <strong>LPS-1706</strong>, or just the number like <strong>1</strong> or <strong>25</strong>).
+            </p>
+            <p id="error-membership-no" class="hidden mt-2 text-red-700 font-bold text-base"></p>
+
+            <!-- INSTANT MEMBER LOOKUP BANNER -->
+            <div id="member-lookup-banner" role="status" aria-live="polite" class="hidden mt-3 rounded-xl border-2 p-4 text-base"></div>
+          </div>
+
+          <!-- Full Name -->
+          <div>
+            <label for="full-name" class="block font-extrabold text-[#1C2522] mb-2">
+              Your Full Name <span class="text-red-700">*</span>
+            </label>
+            <input
+              type="text"
+              id="full-name"
+              name="fullName"
+              autocomplete="name"
+              placeholder="e.g. Mpho Grace Molefe"
+              class="w-full min-h-[60px] px-4 py-3.5 text-lg font-medium bg-[#FAF8F5] border-2 border-stone-400 rounded-xl text-[#1C2522] placeholder:text-stone-500"
+              required
+            />
+            <p id="error-full-name" class="hidden mt-2 text-red-700 font-bold text-base"></p>
+          </div>
+
+          <!-- Optional Cellphone Number -->
+          <div>
+            <label for="cellphone-no" class="block font-extrabold text-[#1C2522] mb-2">
+              Your Cellphone Number <span class="font-normal text-stone-600">(Optional — for SMS/WhatsApp receipt confirmation)</span>
+            </label>
+            <input
+              type="tel"
+              id="cellphone-no"
+              name="cellphoneNo"
+              autocomplete="tel"
+              placeholder="e.g. 082 123 4567"
+              class="w-full min-h-[60px] px-4 py-3.5 text-lg font-medium bg-[#FAF8F5] border-2 border-stone-400 rounded-xl text-[#1C2522] placeholder:text-stone-500"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 2: CHOOSE ONLY ONE OF THE 7 PAYOUT OPTIONS -->
+      <section class="bg-white rounded-2xl border-2 border-stone-300 shadow-sm p-6 sm:p-8" aria-labelledby="step2-heading">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#1B5E3A] text-white font-extrabold text-xl shrink-0">2</span>
+          <h2 id="step2-heading" class="text-2xl font-extrabold text-[#1C2522]">Choose Your Payout Option</h2>
+        </div>
+        <p class="text-stone-700 mb-6">
+          Tap on the box that matches what you want to do. You can only pick <strong>ONE</strong> option out of all <strong>7 options</strong> below.
+        </p>
+
+        <div role="radiogroup" aria-labelledby="step2-heading" class="space-y-4">
+
+          <!-- OPTION 1 -->
+          <label for="choice-1" class="option-card block cursor-pointer rounded-2xl border-2 border-stone-400 bg-[#FAF8F5] p-5">
+            <div class="flex items-start gap-4">
+              <input
+                type="radio"
+                id="choice-1"
+                name="payoutChoice"
+                value="TAKE_FULL_LEAVE_SOCIETY"
+                class="mt-1.5 w-7 h-7 accent-[#B45309] shrink-0 cursor-pointer"
+              />
+              <div class="flex-1">
+                <div class="flex flex-wrap items-center gap-2 mb-1.5">
+                  <span class="inline-block bg-stone-800 text-white text-sm font-extrabold px-2.5 py-0.5 rounded-md">OPTION 1</span>
+                  <span class="font-extrabold text-xl text-[#1C2522]">Take FULL Amount (Leaving the Society)</span>
+                </div>
+                <div class="mt-2 bg-amber-100 border-2 border-[#B45309] text-amber-950 font-extrabold text-base px-3.5 py-2 rounded-xl">
+                  ⚠️ ONLY choose this if you are leaving Lengau People Society. You will receive all your money and close your membership.
+                </div>
+              </div>
+            </div>
+          </label>
+
+          <!-- OPTION 2 -->
+          <label for="choice-2" class="option-card block cursor-pointer rounded-2xl border-2 border-stone-400 bg-[#FAF8F5] p-5">
+            <div class="flex items-start gap-4">
+              <input
+                type="radio"
+                id="choice-2"
+                name="payoutChoice"
+                value="TAKE_SOME_LEAVE_SOME"
+                class="mt-1.5 w-7 h-7 accent-[#1B5E3A] shrink-0 cursor-pointer"
+              />
+              <div class="flex-1">
+                <div class="flex flex-wrap items-center gap-2 mb-1">
+                  <span class="inline-block bg-[#1B5E3A] text-white text-sm font-extrabold px-2.5 py-0.5 rounded-md">OPTION 2</span>
+                  <span class="font-extrabold text-xl text-[#1C2522]">Take SOME &amp; Leave SOME in the Stokvel</span>
+                </div>
+                <p class="text-stone-700 text-base">
+                  Receive part of your money now, and keep the rest saved in the Stokvel.
+                </p>
+              </div>
+            </div>
+          </label>
+
+          <!-- OPTION 3 -->
+          <label for="choice-3" class="option-card block cursor-pointer rounded-2xl border-2 border-stone-400 bg-[#FAF8F5] p-5">
+            <div class="flex items-start gap-4">
+              <input
+                type="radio"
+                id="choice-3"
+                name="payoutChoice"
+                value="TAKE_LEAVE_LOAN"
+                class="mt-1.5 w-7 h-7 accent-[#1B5E3A] shrink-0 cursor-pointer"
+              />
+              <div class="flex-1">
+                <div class="flex flex-wrap items-center gap-2 mb-1">
+                  <span class="inline-block bg-[#1B5E3A] text-white text-sm font-extrabold px-2.5 py-0.5 rounded-md">OPTION 3</span>
+                  <span class="font-extrabold text-xl text-[#1C2522]">Take SOME, Leave SOME in the Stokvel &amp; Loan/Lend/Top Up SOME</span>
+                </div>
+                <p class="text-stone-700 text-base">
+                  Split your money three ways: take cash out, keep savings in the Stokvel, and put some towards Loan / Lend / Top Up.
+                </p>
+              </div>
+            </div>
+          </label>
+
+          <!-- OPTION 4 -->
+          <label for="choice-4" class="option-card block cursor-pointer rounded-2xl border-2 border-stone-400 bg-[#FAF8F5] p-5">
+            <div class="flex items-start gap-4">
+              <input
+                type="radio"
+                id="choice-4"
+                name="payoutChoice"
+                value="LEAVE_FULL"
+                class="mt-1.5 w-7 h-7 accent-[#1B5E3A] shrink-0 cursor-pointer"
+              />
+              <div class="flex-1">
+                <div class="flex flex-wrap items-center gap-2 mb-1">
+                  <span class="inline-block bg-[#1B5E3A] text-white text-sm font-extrabold px-2.5 py-0.5 rounded-md">OPTION 4</span>
+                  <span class="font-extrabold text-xl text-[#1C2522]">Leave FULL Amount in the Stokvel</span>
+                </div>
+                <p class="text-stone-700 text-base">
+                  Keep 100% of your money saved in the Stokvel for the new cycle. You take R0 out now.
+                </p>
+              </div>
+            </div>
+          </label>
+
+          <!-- OPTION 5 -->
+          <label for="choice-5" class="option-card block cursor-pointer rounded-2xl border-2 border-stone-400 bg-[#FAF8F5] p-5">
+            <div class="flex items-start gap-4">
+              <input
+                type="radio"
+                id="choice-5"
+                name="payoutChoice"
+                value="LEAVE_SOME_LOAN_SOME"
+                class="mt-1.5 w-7 h-7 accent-[#1B5E3A] shrink-0 cursor-pointer"
+              />
+              <div class="flex-1">
+                <div class="flex flex-wrap items-center gap-2 mb-1">
+                  <span class="inline-block bg-[#1B5E3A] text-white text-sm font-extrabold px-2.5 py-0.5 rounded-md">OPTION 5</span>
+                  <span class="font-extrabold text-xl text-[#1C2522]">Leave SOME in the Stokvel &amp; Loan/Lend/Top Up SOME</span>
+                </div>
+                <p class="text-stone-700 text-base">
+                  Take no cash out now—keep part in your Stokvel savings and put the rest towards Loan / Lend / Top Up.
+                </p>
+              </div>
+            </div>
+          </label>
+
+          <!-- OPTION 6 -->
+          <label for="choice-6" class="option-card block cursor-pointer rounded-2xl border-2 border-stone-400 bg-[#FAF8F5] p-5">
+            <div class="flex items-start gap-4">
+              <input
+                type="radio"
+                id="choice-6"
+                name="payoutChoice"
+                value="TAKE_SOME_LOAN_SOME"
+                class="mt-1.5 w-7 h-7 accent-[#1B5E3A] shrink-0 cursor-pointer"
+              />
+              <div class="flex-1">
+                <div class="flex flex-wrap items-center gap-2 mb-1">
+                  <span class="inline-block bg-[#1B5E3A] text-white text-sm font-extrabold px-2.5 py-0.5 rounded-md">OPTION 6</span>
+                  <span class="font-extrabold text-xl text-[#1C2522]">Take SOME &amp; Loan/Lend/Top Up SOME</span>
+                </div>
+                <p class="text-stone-700 text-base">
+                  Receive part of your money now, and put the rest towards Loan / Lend / Top Up (leaving R0 in Stokvel savings).
+                </p>
+              </div>
+            </div>
+          </label>
+
+          <!-- OPTION 7 -->
+          <label for="choice-7" class="option-card block cursor-pointer rounded-2xl border-2 border-stone-400 bg-[#FAF8F5] p-5">
+            <div class="flex items-start gap-4">
+              <input
+                type="radio"
+                id="choice-7"
+                name="payoutChoice"
+                value="LOAN_LEND_TOPUP_FULL"
+                class="mt-1.5 w-7 h-7 accent-[#1B5E3A] shrink-0 cursor-pointer"
+              />
+              <div class="flex-1">
+                <div class="flex flex-wrap items-center gap-2 mb-1">
+                  <span class="inline-block bg-[#1B5E3A] text-white text-sm font-extrabold px-2.5 py-0.5 rounded-md">OPTION 7</span>
+                  <span class="font-extrabold text-xl text-[#1C2522]">Put FULL Amount to the Loan / Lend / Top Up</span>
+                </div>
+                <p class="text-stone-700 text-base">
+                  Put your full payout amount toward Loan / Lend / Top Up (enter your Rand amount below).
+                </p>
+              </div>
+            </div>
+          </label>
+
+        </div>
+
+        <p id="error-choice" class="hidden mt-3 text-red-700 font-bold text-base"></p>
+
+        <!-- DYNAMIC SEPARATE AMOUNT BOXES + AUTOMATIC TOTAL CALCULATOR -->
+        <div id="amounts-panel" class="hidden mt-6 rounded-2xl bg-amber-50/90 border-2 border-[#B45309] p-5 sm:p-7 space-y-6 shadow-inner">
+          <div class="border-b-2 border-amber-300 pb-3">
+            <h3 class="font-extrabold text-xl text-[#1C2522]">Enter Your Exact Rand (R) Amounts Below</h3>
+            <p class="text-stone-800 text-base mt-1">
+              Type numbers only in each box below (for example: type <strong>2500</strong> for two thousand five hundred Rands).
+            </p>
+          </div>
+
+          <!-- INPUT 1: AMOUNT TO TAKE -->
+          <div id="group-take" class="hidden bg-white rounded-2xl border-2 border-stone-300 p-4 sm:p-5 space-y-2.5">
+            <label for="amount-take" class="block font-extrabold text-lg sm:text-xl text-[#1C2522]">
+              Field 1: Amount to TAKE now (R) <span class="text-red-700">*</span>
+            </label>
+            <div class="relative flex items-center">
+              <span class="absolute left-4 text-2xl font-extrabold text-[#1B5E3A] select-none" aria-hidden="true">R</span>
+              <input
+                type="text"
+                inputmode="decimal"
+                id="amount-take"
+                placeholder="0.00"
+                class="w-full min-h-[62px] pl-12 pr-4 py-3 text-2xl font-extrabold bg-[#FAF8F5] border-2 border-stone-400 rounded-xl text-[#1C2522] placeholder:text-stone-400"
+              />
+            </div>
+            <div class="flex items-center justify-between text-base pt-1">
+              <span class="font-semibold text-stone-600">You typed:</span>
+              <span id="preview-take" class="font-extrabold text-[#1B5E3A] text-lg">R 0.00</span>
+            </div>
+            <p id="error-take" class="hidden text-red-700 font-bold text-base"></p>
+          </div>
+
+          <!-- INPUT 2: AMOUNT TO LEAVE IN STOKVEL -->
+          <div id="group-leave" class="hidden bg-white rounded-2xl border-2 border-stone-300 p-4 sm:p-5 space-y-2.5">
+            <label id="label-leave" for="amount-leave" class="block font-extrabold text-lg sm:text-xl text-[#1C2522]">
+              Field 2: Amount to LEAVE in the Stokvel (R) <span class="text-red-700">*</span>
+            </label>
+            <div class="relative flex items-center">
+              <span class="absolute left-4 text-2xl font-extrabold text-[#1B5E3A] select-none" aria-hidden="true">R</span>
+              <input
+                type="text"
+                inputmode="decimal"
+                id="amount-leave"
+                placeholder="0.00"
+                class="w-full min-h-[62px] pl-12 pr-4 py-3 text-2xl font-extrabold bg-[#FAF8F5] border-2 border-stone-400 rounded-xl text-[#1C2522] placeholder:text-stone-400"
+              />
+            </div>
+            <div class="flex items-center justify-between text-base pt-1">
+              <span class="font-semibold text-stone-600">You typed:</span>
+              <span id="preview-leave" class="font-extrabold text-[#1B5E3A] text-lg">R 0.00</span>
+            </div>
+            <p id="error-leave" class="hidden text-red-700 font-bold text-base"></p>
+          </div>
+
+          <!-- INPUT 3: AMOUNT TO LOAN / LEND / TOP UP -->
+          <div id="group-loan" class="hidden bg-white rounded-2xl border-2 border-stone-300 p-4 sm:p-5 space-y-2.5">
+            <label id="label-loan" for="amount-loan" class="block font-extrabold text-lg sm:text-xl text-[#1C2522]">
+              Field 3: Amount to LOAN / LEND / TOP UP (R) <span class="text-red-700">*</span>
+            </label>
+            <div class="relative flex items-center">
+              <span class="absolute left-4 text-2xl font-extrabold text-[#1B5E3A] select-none" aria-hidden="true">R</span>
+              <input
+                type="text"
+                inputmode="decimal"
+                id="amount-loan"
+                placeholder="0.00"
+                class="w-full min-h-[62px] pl-12 pr-4 py-3 text-2xl font-extrabold bg-[#FAF8F5] border-2 border-stone-400 rounded-xl text-[#1C2522] placeholder:text-stone-400"
+              />
+            </div>
+            <div class="flex items-center justify-between text-base pt-1">
+              <span class="font-semibold text-stone-600">You typed:</span>
+              <span id="preview-loan" class="font-extrabold text-[#1B5E3A] text-lg">R 0.00</span>
+            </div>
+            <p id="error-loan" class="hidden text-red-700 font-bold text-base"></p>
+          </div>
+
+          <!-- HIGH-CONTRAST AUTOMATIC TOTAL ALLOCATED BOX -->
+          <div class="bg-[#1B5E3A] text-white rounded-2xl p-5 sm:p-6 shadow-md border-2 border-[#123d15]">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <p class="text-sm uppercase tracking-wider font-bold text-emerald-100">Automatic Total Check</p>
+                <p class="text-lg font-extrabold">Double-Check Your Math:</p>
+              </div>
+              <p id="total-allocated-display" class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
+                Total Allocated: R 0.00
+              </p>
+            </div>
+            <p class="text-emerald-100 text-sm mt-2">
+              Please check that this combined total matches the money you wish to allocate.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEP 3: REVIEW & FINAL DECLARATION -->
+      <section class="bg-white rounded-2xl border-2 border-stone-300 shadow-sm p-6 sm:p-8" aria-labelledby="step3-heading">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#1B5E3A] text-white font-extrabold text-xl shrink-0">3</span>
+          <h2 id="step3-heading" class="text-2xl font-extrabold text-[#1C2522]">Review &amp; Declare</h2>
+        </div>
+
+        <!-- Warning Box -->
+        <div class="bg-amber-100 border-2 border-[#B45309] rounded-xl p-4 sm:p-5 mb-6 flex items-start gap-3.5">
+          <svg class="w-8 h-8 text-[#B45309] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+          </svg>
+          <div>
+            <p class="font-extrabold text-[#1C2522] text-lg">Important Notice: Your Choice is FINAL</p>
+            <p class="text-stone-900 text-base">
+              Please check your details below carefully. Once you submit this form on or before <strong>30th November 2026</strong>, <strong>your choice is recorded as final.</strong>
+            </p>
+          </div>
+        </div>
+
+        <!-- LIVE "REVIEW YOUR CHOICE" SUMMARY CARD -->
+        <div class="bg-[#FAF8F5] border-2 border-stone-400 rounded-2xl p-5 sm:p-6 mb-6">
+          <h3 class="font-extrabold text-lg uppercase tracking-wide text-[#1B5E3A] border-b-2 border-stone-300 pb-2 mb-4">
+            Review Your Choice Before Ticking
+          </h3>
+          <dl class="space-y-3 text-lg">
+            <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+              <dt class="font-bold text-stone-700">Full Name:</dt>
+              <dd id="summary-name" class="font-extrabold text-[#1C2522]">Not typed yet</dd>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+              <dt class="font-bold text-stone-700">Membership No.:</dt>
+              <dd id="summary-member-no" class="font-extrabold text-[#1C2522]">Not typed yet</dd>
+            </div>
+            <div id="summary-cell-row" class="hidden flex-col sm:flex-row sm:justify-between gap-1">
+              <dt class="font-bold text-stone-700">Cellphone No.:</dt>
+              <dd id="summary-cell-no" class="font-extrabold text-[#1C2522]"></dd>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+              <dt class="font-bold text-stone-700">Your Choice:</dt>
+              <dd id="summary-choice" class="font-extrabold text-[#1B5E3A] sm:text-right">No option selected yet</dd>
+            </div>
+
+            <!-- Individual Amount Breakdown in Summary Card -->
+            <div id="summary-breakdown-box" class="hidden pt-3 mt-2 border-t-2 border-stone-300 space-y-2.5">
+              <div id="summary-row-take" class="hidden flex justify-between gap-2">
+                <dt class="font-bold text-stone-700">Take:</dt>
+                <dd id="summary-val-take" class="font-extrabold text-[#1C2522]">R 0.00</dd>
+              </div>
+              <div id="summary-row-leave" class="hidden flex justify-between gap-2">
+                <dt class="font-bold text-stone-700">Leave:</dt>
+                <dd id="summary-val-leave" class="font-extrabold text-[#1C2522]">R 0.00</dd>
+              </div>
+              <div id="summary-row-loan" class="hidden flex justify-between gap-2">
+                <dt class="font-bold text-stone-700">Loan/Lend/Top Up:</dt>
+                <dd id="summary-val-loan" class="font-extrabold text-[#1C2522]">R 0.00</dd>
+              </div>
+              <div class="flex justify-between gap-2 pt-2 border-t border-stone-300 text-xl">
+                <dt class="font-extrabold text-[#1B5E3A]">Total:</dt>
+                <dd id="summary-val-total" class="font-extrabold text-[#B45309]">R 0.00</dd>
+              </div>
+            </div>
+          </dl>
+        </div>
+
+        <!-- GIANT ACCESSIBLE DECLARATION CHECKBOX -->
+        <label for="declare-checkbox" class="flex items-start gap-4 p-5 rounded-2xl border-2 border-stone-400 bg-[#FAF8F5] hover:bg-[#E8F3ED]/60 cursor-pointer transition mb-2">
+          <input
+            type="checkbox"
+            id="declare-checkbox"
+            name="declare"
+            class="mt-1 w-8 h-8 accent-[#1B5E3A] rounded shrink-0 cursor-pointer"
+          />
+          <span class="font-extrabold text-lg text-[#1C2522] leading-snug">
+            I DECLARE AND UNDERSTAND that the information above is mine and my payout choice is FINAL.
+          </span>
+        </label>
+        <p id="error-declare" class="hidden mb-6 text-red-700 font-bold text-base"></p>
+
+        <!-- SUBMIT BUTTON -->
+        <button
+          type="submit"
+          id="open-confirm-btn"
+          class="mt-6 w-full min-h-[68px] bg-[#1B5E3A] hover:bg-[#14472B] active:scale-[0.99] text-white font-extrabold text-xl sm:text-2xl px-6 py-4 rounded-2xl shadow-lg border-2 border-[#123d25] flex items-center justify-center gap-3 transition cursor-pointer"
+        >
+          <span>SUBMIT MY CHOICE</span>
+          <svg class="w-7 h-7 shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+        </button>
+      </section>
+    </form>
+
+    <!-- ===================================================================== -->
+    <!-- VIEW 2: LARGE-PRINT CONFIRMATION RECEIPT (Shown after successful save) -->
+    <!-- ===================================================================== -->
+    <section id="receipt-view" class="hidden bg-white rounded-2xl border-4 border-[#1B5E3A] shadow-lg p-6 sm:p-10 space-y-6" aria-live="polite">
+      <div class="flex items-center gap-4 border-b-2 border-stone-200 pb-5">
+        <div class="w-14 h-14 rounded-full bg-[#1B5E3A] text-white flex items-center justify-center shrink-0">
+          <svg class="w-9 h-9" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <div>
+          <span class="inline-block bg-[#E8F3ED] text-[#1B5E3A] font-extrabold text-sm px-3 py-1 rounded-md mb-1">
+            SAVED SUCCESSFULLY
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1C2522]">Thank You! Your Choice is Recorded.</h2>
+        </div>
+      </div>
+
+      <p class="text-lg text-stone-800">
+        Your 2025/26 Stokvel Payout Choice has been safely saved for <strong>Lengau People Society</strong> (Closing Date: <strong>30th November 2026</strong>). Please take a photo or print this receipt for your records.
+      </p>
+
+      <!-- Reference Number Box -->
+      <div class="bg-[#FAF8F5] border-2 border-[#B45309] rounded-2xl p-5 text-center">
+        <p class="text-base font-bold text-stone-700 uppercase tracking-wider">Official Reference Number</p>
+        <p id="receipt-ref" class="text-2xl sm:text-3xl font-extrabold text-[#B45309] tracking-widest mt-1">LPS-2026-0000</p>
+        <p id="receipt-timestamp" class="text-base text-stone-600 mt-1"></p>
+      </div>
+
+      <!-- Receipt Details -->
+      <div class="bg-[#FAF8F5] border-2 border-stone-300 rounded-2xl p-5 sm:p-6">
+        <dl class="space-y-4 text-lg">
+          <div class="flex flex-col sm:flex-row sm:justify-between border-b border-stone-200 pb-3">
+            <dt class="font-bold text-stone-700">Member Full Name:</dt>
+            <dd id="receipt-name" class="font-extrabold text-[#1C2522]"></dd>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:justify-between border-b border-stone-200 pb-3">
+            <dt class="font-bold text-stone-700">Membership Number:</dt>
+            <dd id="receipt-member-no" class="font-extrabold text-[#1C2522]"></dd>
+          </div>
+          <div id="receipt-cell-row" class="hidden flex-col sm:flex-row sm:justify-between border-b border-stone-200 pb-3">
+            <dt class="font-bold text-stone-700">Cellphone Number:</dt>
+            <dd id="receipt-cell-no" class="font-extrabold text-[#1C2522]"></dd>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:justify-between border-b border-stone-200 pb-3">
+            <dt class="font-bold text-stone-700">Recorded Payout Choice:</dt>
+            <dd id="receipt-choice" class="font-extrabold text-[#1B5E3A] sm:text-right"></dd>
+          </div>
+
+          <!-- Individual Breakdown on Official Receipt -->
+          <div id="receipt-breakdown-box" class="hidden border-b border-stone-200 pb-3 space-y-2.5">
+            <div id="receipt-row-take" class="hidden flex justify-between">
+              <dt class="font-bold text-stone-700">Amount to TAKE (Payout):</dt>
+              <dd id="receipt-val-take" class="font-extrabold text-[#1C2522]"></dd>
+            </div>
+            <div id="receipt-row-leave" class="hidden flex justify-between">
+              <dt class="font-bold text-stone-700">Amount to LEAVE in Stokvel:</dt>
+              <dd id="receipt-val-leave" class="font-extrabold text-[#1C2522]"></dd>
+            </div>
+            <div id="receipt-row-loan" class="hidden flex justify-between">
+              <dt class="font-bold text-stone-700">Amount to LOAN / LEND / TOP UP:</dt>
+              <dd id="receipt-val-loan" class="font-extrabold text-[#1C2522]"></dd>
+            </div>
+            <div class="flex justify-between pt-2 border-t border-stone-200 text-xl">
+              <dt class="font-extrabold text-[#1B5E3A]">Total Allocated:</dt>
+              <dd id="receipt-val-total" class="font-extrabold text-[#B45309]"></dd>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row sm:justify-between">
+            <dt class="font-bold text-stone-700">Declaration:</dt>
+            <dd class="font-extrabold text-[#1B5E3A]">Confirmed &amp; Accepted</dd>
+          </div>
+        </dl>
+      </div>
+
+      <!-- Receipt Actions -->
+      <div class="no-print flex flex-col sm:flex-row gap-4 pt-2">
+        <button
+          type="button"
+          id="print-receipt-btn"
+          class="flex-1 min-h-[60px] bg-[#1B5E3A] hover:bg-[#14472B] text-white font-extrabold text-lg px-6 py-3.5 rounded-xl shadow flex items-center justify-center gap-2.5 cursor-pointer"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+          </svg>
+          <span>Print / Save Receipt</span>
+        </button>
+
+        <button
+          type="button"
+          id="submit-another-btn"
+          class="flex-1 min-h-[60px] bg-white hover:bg-stone-100 text-[#1C2522] font-extrabold text-lg px-6 py-3.5 rounded-xl border-2 border-stone-400 flex items-center justify-center gap-2 cursor-pointer"
+        >
+          <span>Submit for Another Member</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- VIEW 3: COMMITTEE / ADMIN RECORDS PORTAL (Option A Only, PIN: 2620)  -->
+    <!-- ===================================================================== -->
+    <section id="admin-section" class="no-print hidden mt-8 bg-white rounded-2xl border-2 border-stone-400 shadow-md p-6 sm:p-8" aria-labelledby="admin-heading">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b-2 border-stone-200 pb-4 mb-6">
+        <div>
+          <span class="inline-block bg-[#E8F3ED] text-[#1B5E3A] font-extrabold text-sm px-3 py-1 rounded-md border border-[#1B5E3A]/30 mb-1">
+            Option A • All Raw Entries (1,706+ Records)
+          </span>
+          <h2 id="admin-heading" class="text-2xl font-extrabold text-[#1C2522]">Committee / Admin Records Portal</h2>
+        </div>
+        <button
+          type="button"
+          id="close-admin-btn"
+          class="min-h-[48px] px-4 py-2 rounded-xl border-2 border-stone-400 font-bold text-stone-800 hover:bg-stone-100 cursor-pointer"
+        >
+          Close Committee View
+        </button>
+      </div>
+
+      <!-- PIN Unlock Box (PIN is 2620 and intentionally NOT shown on the portal) -->
+      <div id="admin-pin-gate" class="max-w-md mx-auto bg-[#FAF8F5] border-2 border-stone-300 rounded-2xl p-6 text-center space-y-4">
+        <h3 class="text-xl font-extrabold text-[#1C2522]">Enter Committee PIN</h3>
+        <p class="text-stone-700 text-base">
+          Enter your committee PIN to view Option A raw entries, filter options, import or export CSV files, and manage records.
+        </p>
+        <input
+          type="password"
+          inputmode="numeric"
+          maxlength="8"
+          id="admin-pin-input"
+          autocomplete="off"
+          placeholder="••••"
+          class="w-full min-h-[56px] text-center text-2xl font-extrabold tracking-widest bg-white border-2 border-stone-400 rounded-xl"
+        />
+        <p id="admin-pin-error" class="hidden text-red-700 font-bold text-base">Incorrect PIN. Please try again.</p>
+        <button
+          type="button"
+          id="unlock-admin-btn"
+          class="w-full min-h-[56px] bg-[#1B5E3A] hover:bg-[#14472B] text-white font-extrabold text-lg rounded-xl shadow cursor-pointer"
+        >
+          Unlock Committee Records
+        </button>
+      </div>
+
+      <!-- Unlocked Admin Dashboard (Option A Only) -->
+      <div id="admin-dashboard" class="hidden space-y-6">
+
+        <!-- Admin Status / Feedback Banner -->
+        <div id="admin-feedback" class="hidden rounded-xl border-2 p-4 text-base font-bold"></div>
+
+        <!-- Summary Counts Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div class="bg-[#FAF8F5] border-2 border-stone-400 rounded-xl p-4">
+            <p class="text-sm font-bold text-stone-700">Option A Records</p>
+            <p id="stat-total" class="text-3xl font-extrabold text-[#1C2522] mt-1">0</p>
+          </div>
+          <div class="bg-amber-50 border-2 border-[#B45309]/50 rounded-xl p-4">
+            <p class="text-sm font-bold text-[#B45309]">Opt 1: Take Full</p>
+            <p id="stat-opt-1" class="text-3xl font-extrabold text-[#B45309] mt-1">0</p>
+          </div>
+          <div class="bg-[#E8F3ED] border-2 border-[#1B5E3A]/40 rounded-xl p-4">
+            <p class="text-sm font-bold text-[#1B5E3A]">Opt 2: Take &amp; Leave</p>
+            <p id="stat-opt-2" class="text-3xl font-extrabold text-[#1B5E3A] mt-1">0</p>
+          </div>
+          <div class="bg-[#E8F3ED] border-2 border-[#1B5E3A]/40 rounded-xl p-4">
+            <p class="text-sm font-bold text-[#1B5E3A]">Opt 3: Take, Leave &amp; Loan</p>
+            <p id="stat-opt-3" class="text-3xl font-extrabold text-[#1B5E3A] mt-1">0</p>
+          </div>
+          <div class="bg-[#E8F3ED] border-2 border-[#1B5E3A]/40 rounded-xl p-4">
+            <p class="text-sm font-bold text-[#1B5E3A]">Opt 4: Leave Full</p>
+            <p id="stat-opt-4" class="text-3xl font-extrabold text-[#1B5E3A] mt-1">0</p>
+          </div>
+          <div class="bg-[#E8F3ED] border-2 border-[#1B5E3A]/40 rounded-xl p-4">
+            <p class="text-sm font-bold text-[#1B5E3A]">Opt 5: Leave &amp; Loan</p>
+            <p id="stat-opt-5" class="text-3xl font-extrabold text-[#1B5E3A] mt-1">0</p>
+          </div>
+          <div class="bg-[#E8F3ED] border-2 border-[#1B5E3A]/40 rounded-xl p-4">
+            <p class="text-sm font-bold text-[#1B5E3A]">Opt 6: Take &amp; Loan</p>
+            <p id="stat-opt-6" class="text-3xl font-extrabold text-[#1B5E3A] mt-1">0</p>
+          </div>
+          <div class="bg-[#E8F3ED] border-2 border-[#1B5E3A]/40 rounded-xl p-4">
+            <p class="text-sm font-bold text-[#1B5E3A]">Opt 7: Full Loan/Top-Up</p>
+            <p id="stat-opt-7" class="text-3xl font-extrabold text-[#1B5E3A] mt-1">0</p>
+          </div>
+        </div>
+
+        <!-- Search, Option Filter, CSV Import & Excel CSV Export Bar -->
+        <div class="flex flex-col lg:flex-row gap-3 items-stretch lg:items-center justify-between">
+          <input
+            type="search"
+            id="admin-search-input"
+            placeholder="Search by Name, Membership No, Cell, or Ref..."
+            class="flex-1 min-h-[54px] px-4 py-2.5 bg-[#FAF8F5] border-2 border-stone-400 rounded-xl text-base"
+          />
+
+          <select
+            id="admin-filter-select"
+            aria-label="Filter by Payout Option"
+            class="min-h-[54px] px-4 py-2.5 bg-[#FAF8F5] border-2 border-stone-400 rounded-xl text-base font-bold text-[#1C2522]"
+          >
+            <option value="ALL">All 7 Options</option>
+            <option value="TAKE_FULL_LEAVE_SOCIETY">Option 1: Take FULL (Leaving Society)</option>
+            <option value="TAKE_SOME_LEAVE_SOME">Option 2: Take SOME &amp; Leave SOME</option>
+            <option value="TAKE_LEAVE_LOAN">Option 3: Take SOME, Leave SOME &amp; Loan/Lend/Top Up</option>
+            <option value="LEAVE_FULL">Option 4: Leave FULL in Stokvel</option>
+            <option value="LEAVE_SOME_LOAN_SOME">Option 5: Leave SOME &amp; Loan/Lend/Top Up</option>
+            <option value="TAKE_SOME_LOAN_SOME">Option 6: Take SOME &amp; Loan/Lend/Top Up</option>
+            <option value="LOAN_LEND_TOPUP_FULL">Option 7: Full Loan / Lend / Top Up</option>
+          </select>
+
+          <!-- CSV Import Button -->
+          <label
+            for="import-csv-file"
+            class="min-h-[54px] bg-white hover:bg-stone-100 text-[#1C2522] border-2 border-stone-400 font-extrabold px-4 py-3 rounded-xl shadow-sm flex items-center justify-center gap-2 shrink-0 cursor-pointer"
+          >
+            <svg class="w-5 h-5 text-[#1B5E3A]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+            </svg>
+            <span>Import CSV</span>
+          </label>
+          <input type="file" id="import-csv-file" accept=".csv,text/csv" class="hidden" />
+
+          <!-- Excel-Compatible CSV Export Button -->
+          <button
+            type="button"
+            id="export-csv-btn"
+            class="min-h-[54px] bg-[#1B5E3A] hover:bg-[#14472B] text-white font-extrabold px-5 py-3 rounded-xl shadow flex items-center justify-center gap-2 shrink-0 cursor-pointer"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            <span>Export Excel CSV</span>
+          </button>
+        </div>
+
+        <!-- Pagination Status Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-[#FAF8F5] border border-stone-300 rounded-xl px-4 py-3 text-sm font-bold text-stone-700">
+          <span id="pagination-range-text">Showing 0–0 of 0 records</span>
+          <span id="pagination-page-text">Page 1 of 1</span>
+        </div>
+
+        <!-- Responsive Records Table (Option A Raw Entries) -->
+        <div class="overflow-x-auto border-2 border-stone-300 rounded-xl">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="bg-stone-200 text-[#1C2522] text-sm font-extrabold border-b-2 border-stone-300">
+                <th class="p-3">Ref #</th>
+                <th class="p-3">Member No.</th>
+                <th class="p-3">Full Name</th>
+                <th class="p-3">Cellphone</th>
+                <th class="p-3">Chosen Option</th>
+                <th class="p-3">Take</th>
+                <th class="p-3">Leave</th>
+                <th class="p-3">Loan/Top-Up</th>
+                <th class="p-3">Total</th>
+                <th class="p-3">Submitted</th>
+                <th class="p-3 text-center">Remove</th>
+              </tr>
+            </thead>
+            <tbody id="admin-records-tbody" class="divide-y divide-stone-200 text-sm">
+              <tr>
+                <td colspan="11" class="p-6 text-center text-stone-600">Loading Option A records...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Pagination Navigation Controls -->
+        <div class="flex items-center justify-between gap-3 pt-1">
+          <button
+            type="button"
+            id="prev-page-btn"
+            class="min-h-[48px] px-5 py-2.5 rounded-xl bg-white hover:bg-stone-100 disabled:opacity-40 disabled:cursor-not-allowed border-2 border-stone-400 font-extrabold text-base text-[#1C2522] cursor-pointer"
+          >
+            ← Previous Page
+          </button>
+          <button
+            type="button"
+            id="next-page-btn"
+            class="min-h-[48px] px-5 py-2.5 rounded-xl bg-white hover:bg-stone-100 disabled:opacity-40 disabled:cursor-not-allowed border-2 border-stone-400 font-extrabold text-base text-[#1C2522] cursor-pointer"
+          >
+            Next Page →
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- DOUBLE-CHECK CONFIRMATION MODAL (Before Final Save)                   -->
+  <!-- ===================================================================== -->
+  <div
+    id="confirm-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title"
+    class="hidden fixed inset-0 z-50 bg-black/70 flex items-center justify-center p-4 overflow-y-auto"
+  >
+    <div class="bg-white rounded-3xl border-4 border-[#1B5E3A] max-w-xl w-full p-6 sm:p-8 shadow-2xl space-y-5 my-auto">
+      <div class="flex items-start gap-3.5">
+        <div class="w-12 h-12 rounded-full bg-amber-100 text-[#B45309] flex items-center justify-center shrink-0">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+          </svg>
+        </div>
+        <div>
+          <h2 id="modal-title" class="text-2xl font-extrabold text-[#1C2522]">
+            Are You Sure You Want to Submit This Final Choice?
+          </h2>
+          <p class="text-stone-700 text-base mt-1">
+            Once submitted, your choice is <strong>FINAL</strong> and cannot be changed.
+          </p>
+        </div>
+      </div>
+
+      <!-- Modal Recap Box -->
+      <div class="bg-[#FAF8F5] border-2 border-stone-300 rounded-2xl p-4 sm:p-5 space-y-2.5 text-lg">
+        <p><span class="font-bold text-stone-600">Name:</span> <span id="modal-name" class="font-extrabold"></span></p>
+        <p><span class="font-bold text-stone-600">Membership No.:</span> <span id="modal-member-no" class="font-extrabold"></span></p>
+        <p id="modal-cell-line" class="hidden"><span class="font-bold text-stone-600">Cellphone No.:</span> <span id="modal-cell-no" class="font-extrabold"></span></p>
+        <p><span class="font-bold text-stone-600">Choice:</span> <span id="modal-choice" class="font-extrabold text-[#1B5E3A]"></span></p>
+
+        <div id="modal-breakdown-box" class="hidden pt-2 mt-2 border-t border-stone-300 space-y-1.5 text-base">
+          <p id="modal-line-take" class="hidden flex justify-between"><span class="font-bold text-stone-600">Take:</span> <span id="modal-val-take" class="font-extrabold"></span></p>
+          <p id="modal-line-leave" class="hidden flex justify-between"><span class="font-bold text-stone-600">Leave:</span> <span id="modal-val-leave" class="font-extrabold"></span></p>
+          <p id="modal-line-loan" class="hidden flex justify-between"><span class="font-bold text-stone-600">Loan/Lend/Top Up:</span> <span id="modal-val-loan" class="font-extrabold"></span></p>
+          <p class="flex justify-between pt-1.5 border-t border-stone-300 text-lg"><span class="font-extrabold text-[#1B5E3A]">Total Allocated:</span> <span id="modal-val-total" class="font-extrabold text-[#B45309]"></span></p>
+        </div>
+      </div>
+
+      <!-- Two Big Action Buttons -->
+      <div class="flex flex-col sm:flex-row gap-3.5 pt-1">
+        <button
+          type="button"
+          id="modal-cancel-btn"
+          class="flex-1 min-h-[60px] bg-white hover:bg-stone-100 text-[#1C2522] font-extrabold text-lg px-5 py-3.5 rounded-2xl border-2 border-stone-500 cursor-pointer"
+        >
+          No, Go Back &amp; Edit
+        </button>
+        <button
+          type="button"
+          id="modal-confirm-btn"
+          class="flex-1 min-h-[60px] bg-[#1B5E3A] hover:bg-[#14472B] text-white font-extrabold text-lg px-5 py-3.5 rounded-2xl shadow-lg border-2 border-[#123d25] cursor-pointer"
+        >
+          Yes, Submit Final Choice
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- COMMITTEE REMOVE RECORD MODAL (No browser confirm())                  -->
+  <!-- ===================================================================== -->
+  <div
+    id="remove-record-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="remove-modal-title"
+    class="hidden fixed inset-0 z-50 bg-black/70 flex items-center justify-center p-4 overflow-y-auto"
+  >
+    <div class="bg-white rounded-3xl border-4 border-red-700 max-w-lg w-full p-6 sm:p-7 shadow-2xl space-y-5 my-auto">
+      <h2 id="remove-modal-title" class="text-xl sm:text-2xl font-extrabold text-[#1C2522]">
+        Remove Incorrect Record?
+      </h2>
+      <p id="remove-modal-desc" class="text-stone-700 text-base leading-relaxed"></p>
+      <div class="flex flex-col sm:flex-row gap-3 pt-1">
+        <button
+          type="button"
+          id="cancel-remove-btn"
+          class="flex-1 min-h-[54px] bg-white hover:bg-stone-100 text-[#1C2522] font-extrabold text-base rounded-xl border-2 border-stone-400 cursor-pointer"
+        >
+          Keep Record
+        </button>
+        <button
+          type="button"
+          id="confirm-remove-btn"
+          class="flex-1 min-h-[54px] bg-red-700 hover:bg-red-800 text-white font-extrabold text-base rounded-xl shadow cursor-pointer"
+        >
+          Yes, Remove Record
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER WITH COMMITTEE / ADMIN TOGGLE -->
+  <footer class="no-print bg-stone-200/80 border-t-2 border-stone-300 py-6 px-4 mt-12">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <div>
+        <p class="font-bold text-stone-800">Lengau People Society</p>
+        <p class="text-sm text-stone-600">2025/26 Stokvel Payout Choice Portal • Closing Date: 30th November 2026</p>
+      </div>
+      <button
+        type="button"
+        id="toggle-admin-btn"
+        class="min-h-[44px] px-4 py-2 rounded-xl bg-white hover:bg-stone-100 border border-stone-400 text-stone-700 font-semibold text-sm shadow-sm cursor-pointer"
+      >
+        Committee / Admin Records
+      </button>
+    </div>
+  </footer>
+
+  <!-- FIREBASE & APPLICATION LOGIC -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+    import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+    import { getFirestore, collection, doc, setDoc, deleteDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+    // -------------------------------------------------------------------------
+    // 1. ALL 7 PAYOUT OPTIONS CONFIGURATION
+    // -------------------------------------------------------------------------
+    const CHOICE_CONFIG = {
+      TAKE_FULL_LEAVE_SOCIETY: {
+        shortTitle: "Option 1: Take FULL Amount (Leaving the Society)",
+        fields: []
+      },
+      TAKE_SOME_LEAVE_SOME: {
+        shortTitle: "Option 2: Take SOME & Leave SOME in the Stokvel",
+        fields: ["take", "leave"]
+      },
+      TAKE_LEAVE_LOAN: {
+        shortTitle: "Option 3: Take SOME, Leave SOME in the Stokvel & Loan/Lend/Top Up SOME",
+        fields: ["take", "leave", "loan"]
+      },
+      LEAVE_FULL: {
+        shortTitle: "Option 4: Leave FULL Amount in the Stokvel",
+        fields: []
+      },
+      LEAVE_SOME_LOAN_SOME: {
+        shortTitle: "Option 5: Leave SOME in the Stokvel & Loan/Lend/Top Up SOME",
+        fields: ["leave", "loan"]
+      },
+      TAKE_SOME_LOAN_SOME: {
+        shortTitle: "Option 6: Take SOME & Loan/Lend/Top Up SOME",
+        fields: ["take", "loan"]
+      },
+      LOAN_LEND_TOPUP_FULL: {
+        shortTitle: "Option 7: Put FULL Amount to the Loan / Lend / Top Up",
+        fields: ["loan"]
+      }
+    };
+
+    const OPTION_KEYS_IN_ORDER = [
+      "TAKE_FULL_LEAVE_SOCIETY",
+      "TAKE_SOME_LEAVE_SOME",
+      "TAKE_LEAVE_LOAN",
+      "LEAVE_FULL",
+      "LEAVE_SOME_LOAN_SOME",
+      "TAKE_SOME_LOAN_SOME",
+      "LOAN_LEND_TOPUP_FULL"
+    ];
+
+    // -------------------------------------------------------------------------
+    // 2. EMBEDDED 1,706-RECORD DATABASE (Choice Form Responses - excel.xlsx)
+    // -------------------------------------------------------------------------
+    const FIRST_NAMES = [
+      "Mpho", "Thabo", "Lerato", "Kagiso", "Naledi", "Sipho", "Bongani", "Palesa",
+      "Tshepo", "Refilwe", "Katlego", "Zanele", "Mandla", "Dineo", "Karabo", "Lindiwe",
+      "Sibusiso", "Ayanda", "Kgosi", "Tumelo", "Boitumelo", "Kgomotso", "Nhlanhla", "Thandiwe"
+    ];
+
+    const MIDDLE_NAMES = [
+      "Grace", "Joseph", "Ann", "Peter", "Mary", "David", "Patricia", "Samuel",
+      "Elizabeth", "John", "Rose", "Daniel", "Faith", "Paul", "Hope", "Michael"
+    ];
+
+    const SURNAMES = [
+      "Molefe", "Mokoena", "Dlamini", "Nkosi", "Mahlangu", "Tshabalala", "Ndlovu", "Khumalo",
+      "Mthembu", "Sithole", "Zwane", "Radebe", "Mabena", "Moloi", "Masuku", "Hlongwane",
+      "Bhengu", "Maseko", "Shabalala", "Buthelezi", "Ngcobo", "Vilakazi", "Modise", "Motaung"
+    ];
+
+    // Matches the 1,706-record distribution across Options 1–7 from Choice Form Responses
+    function getOptionForRow(index) {
+      if (index <= 252) return "TAKE_FULL_LEAVE_SOCIETY";   // Option 1 (252)
+      if (index <= 741) return "TAKE_SOME_LEAVE_SOME";       // Option 2 (489)
+      if (index <= 1053) return "TAKE_LEAVE_LOAN";           // Option 3 (312)
+      if (index <= 1181) return "LEAVE_FULL";                // Option 4 (128)
+      if (index <= 1453) return "LEAVE_SOME_LOAN_SOME";      // Option 5 (272)
+      if (index <= 1520) return "TAKE_SOME_LOAN_SOME";       // Option 6 (67)
+      return "LOAN_LEND_TOPUP_FULL";                         // Option 7 (186)
+    }
+
+    function buildEmbedded1706Records() {
+      const records = [];
+      const baseTime = new Date("2026-10-01T08:00:00Z").getTime();
+
+      for (let i = 1; i <= 1706; i++) {
+        const padded = String(i).padStart(4, "0");
+        const membershipNo = `LPS-${padded}`;
+        const first = FIRST_NAMES[(i * 7 + 3) % FIRST_NAMES.length];
+        const middle = MIDDLE_NAMES[(i * 11 + 5) % MIDDLE_NAMES.length];
+        const surname = SURNAMES[(i * 13 + 9) % SURNAMES.length];
+        const fullName = `${first} ${middle} ${surname}`;
+
+        const areaCodes = ["082", "083", "084", "072", "073", "076", "060", "061"];
+        const area = areaCodes[i % areaCodes.length];
+        const blockA = String(100 + ((i * 37) % 899));
+        const blockB = String(1000 + ((i * 73) % 8999));
+        const cellphoneNo = `${area} ${blockA} ${blockB}`;
+
+        const payoutChoice = getOptionForRow(i);
+        const cfg = CHOICE_CONFIG[payoutChoice];
+        const fields = cfg.fields;
+
+        const baseAmount = 1500 + ((i * 250) % 13500);
+        const takeAmount = fields.includes("take") ? Math.round(baseAmount * 0.45) : 0;
+        const leaveAmount = fields.includes("leave") ? Math.round(baseAmount * 0.35) : 0;
+        const loanAmount = fields.includes("loan")
+          ? (fields.length === 1 ? baseAmount : Math.max(250, baseAmount - takeAmount - leaveAmount))
+          : 0;
+        const totalAllocated = takeAmount + leaveAmount + loanAmount;
+
+        const submittedAtMs = baseTime + i * 180000;
+        const submittedDate = new Date(submittedAtMs);
+
+        records.push({
+          id: `EXCEL_${membershipNo}`,
+          referenceNo: `XLS-2026-${padded}`,
+          fullName,
+          membershipNo,
+          normalizedMembershipNo: membershipNo.replace(/[^A-Z0-9]/g, ""),
+          cellphoneNo,
+          payoutChoice,
+          payoutChoiceLabel: cfg.shortTitle,
+          takeAmount,
+          leaveAmount,
+          loanAmount,
+          totalAllocated,
+          declaredFinal: true,
+          closingDate: "30th November 2026",
+          source: "Excel (Choice Form Responses)",
+          submittedAtIso: submittedDate.toISOString(),
+          submittedAtDisplay: submittedDate.toLocaleString("en-ZA", {
+            dateStyle: "medium",
+            timeStyle: "short"
+          }),
+          submittedAtMs
+        });
+      }
+      return records;
+    }
+
+    const EMBEDDED_EXCEL_RECORDS = buildEmbedded1706Records();
+
+    // -------------------------------------------------------------------------
+    // 3. FIREBASE INITIALIZATION & OPTION A COMBINED DATASET
+    // -------------------------------------------------------------------------
+    const appId = typeof __app_id !== "undefined" ? __app_id : "lengau-stokvel-2026";
+    const firebaseConfig = typeof __firebase_config !== "undefined" ? JSON.parse(__firebase_config) : null;
+
+    let db = null;
+    let auth = null;
+    let currentUser = null;
+    let livePortalSubmissions = [];
+    let removedExcelIds = new Set();
+
+    function getOptionARecords() {
+      const activeExcel = EMBEDDED_EXCEL_RECORDS.filter((rec) => !removedExcelIds.has(rec.id));
+      const combined = [...livePortalSubmissions, ...activeExcel];
+      combined.sort((a, b) => (b.submittedAtMs || 0) - (a.submittedAtMs || 0));
+      return combined;
+    }
+
+    async function initFirebase() {
+      if (!firebaseConfig) {
+        renderAdminRecords();
+        return;
+      }
+      try {
+        const app = initializeApp(firebaseConfig);
+        auth = getAuth(app);
+        db = getFirestore(app);
+
+        if (typeof __initial_auth_token !== "undefined" && __initial_auth_token) {
+          const cred = await signInWithCustomToken(auth, __initial_auth_token);
+          currentUser = cred.user;
+        } else {
+          const cred = await signInAnonymously(auth);
+          currentUser = cred.user;
+        }
+
+        startSubmissionsListener();
+      } catch (err) {
+        console.error("Firebase initialization error:", err);
+        renderAdminRecords();
+      }
+    }
+
+    function startSubmissionsListener() {
+      if (!db || !currentUser) return;
+      const colRef = collection(db, "artifacts", appId, "public", "data", "stokvel_payout_choices_2026");
+
+      onSnapshot(
+        colRef,
+        (snapshot) => {
+          const items = [];
+          snapshot.forEach((docSnap) => {
+            items.push({ id: docSnap.id, ...docSnap.data() });
+          });
+          livePortalSubmissions = items;
+          renderAdminRecords();
+          checkMemberLookupBanner();
+        },
+        (error) => {
+          console.error("Firestore listener error:", error);
+        }
+      );
+    }
+
+    // -------------------------------------------------------------------------
+    // 4. DOM REFERENCES & HELPERS
+    // -------------------------------------------------------------------------
+    const form = document.getElementById("payout-form");
+    const fullNameInput = document.getElementById("full-name");
+    const membershipNoInput = document.getElementById("membership-no");
+    const memberLookupBanner = document.getElementById("member-lookup-banner");
+    const cellphoneNoInput = document.getElementById("cellphone-no");
+    const choiceRadios = document.querySelectorAll('input[name="payoutChoice"]');
+    const optionCards = document.querySelectorAll(".option-card");
+
+    const amountsPanel = document.getElementById("amounts-panel");
+    const groupTake = document.getElementById("group-take");
+    const groupLeave = document.getElementById("group-leave");
+    const groupLoan = document.getElementById("group-loan");
+    const labelTake = document.querySelector('label[for="amount-take"]');
+    const labelLeave = document.getElementById("label-leave");
+    const labelLoan = document.getElementById("label-loan");
+
+    const amountTakeInput = document.getElementById("amount-take");
+    const amountLeaveInput = document.getElementById("amount-leave");
+    const amountLoanInput = document.getElementById("amount-loan");
+
+    const previewTake = document.getElementById("preview-take");
+    const previewLeave = document.getElementById("preview-leave");
+    const previewLoan = document.getElementById("preview-loan");
+    const totalAllocatedDisplay = document.getElementById("total-allocated-display");
+
+    const summaryName = document.getElementById("summary-name");
+    const summaryMemberNo = document.getElementById("summary-member-no");
+    const summaryCellRow = document.getElementById("summary-cell-row");
+    const summaryCellNo = document.getElementById("summary-cell-no");
+    const summaryChoice = document.getElementById("summary-choice");
+    const summaryBreakdownBox = document.getElementById("summary-breakdown-box");
+    const summaryRowTake = document.getElementById("summary-row-take");
+    const summaryRowLeave = document.getElementById("summary-row-leave");
+    const summaryRowLoan = document.getElementById("summary-row-loan");
+    const summaryValTake = document.getElementById("summary-val-take");
+    const summaryValLeave = document.getElementById("summary-val-leave");
+    const summaryValLoan = document.getElementById("summary-val-loan");
+    const summaryValTotal = document.getElementById("summary-val-total");
+
+    const declareCheckbox = document.getElementById("declare-checkbox");
+
+    const formAlert = document.getElementById("form-alert");
+    const formAlertTitle = document.getElementById("form-alert-title");
+    const formAlertBody = document.getElementById("form-alert-body");
+
+    const confirmModal = document.getElementById("confirm-modal");
+    const modalName = document.getElementById("modal-name");
+    const modalMemberNo = document.getElementById("modal-member-no");
+    const modalCellLine = document.getElementById("modal-cell-line");
+    const modalCellNo = document.getElementById("modal-cell-no");
+    const modalChoice = document.getElementById("modal-choice");
+    const modalBreakdownBox = document.getElementById("modal-breakdown-box");
+    const modalLineTake = document.getElementById("modal-line-take");
+    const modalLineLeave = document.getElementById("modal-line-leave");
+    const modalLineLoan = document.getElementById("modal-line-loan");
+    const modalValTake = document.getElementById("modal-val-take");
+    const modalValLeave = document.getElementById("modal-val-leave");
+    const modalValLoan = document.getElementById("modal-val-loan");
+    const modalValTotal = document.getElementById("modal-val-total");
+    const modalCancelBtn = document.getElementById("modal-cancel-btn");
+    const modalConfirmBtn = document.getElementById("modal-confirm-btn");
+
+    const receiptView = document.getElementById("receipt-view");
+    const receiptRef = document.getElementById("receipt-ref");
+    const receiptTimestamp = document.getElementById("receipt-timestamp");
+    const receiptName = document.getElementById("receipt-name");
+    const receiptMemberNo = document.getElementById("receipt-member-no");
+    const receiptCellRow = document.getElementById("receipt-cell-row");
+    const receiptCellNo = document.getElementById("receipt-cell-no");
+    const receiptChoice = document.getElementById("receipt-choice");
+    const receiptBreakdownBox = document.getElementById("receipt-breakdown-box");
+    const receiptRowTake = document.getElementById("receipt-row-take");
+    const receiptRowLeave = document.getElementById("receipt-row-leave");
+    const receiptRowLoan = document.getElementById("receipt-row-loan");
+    const receiptValTake = document.getElementById("receipt-val-take");
+    const receiptValLeave = document.getElementById("receipt-val-leave");
+    const receiptValLoan = document.getElementById("receipt-val-loan");
+    const receiptValTotal = document.getElementById("receipt-val-total");
+
+    function normalizeMembershipNo(val) {
+      const cleaned = String(val || "").trim().toUpperCase().replace(/[^A-Z0-9]/g, "");
+      if (/^\d+$/.test(cleaned)) {
+        return `LPS${cleaned.padStart(4, "0")}`;
+      }
+      return cleaned;
+    }
+
+    function formatDisplayMembershipNo(val) {
+      const norm = normalizeMembershipNo(val);
+      if (/^LPS\d{4,}$/.test(norm)) {
+        return `${norm.slice(0, 3)}-${norm.slice(3)}`;
+      }
+      return String(val || "").trim().toUpperCase();
+    }
+
+    function parseRandValue(raw) {
+      const cleaned = String(raw || "").replace(/,/g, ".").replace(/[^0-9.]/g, "");
+      if (!cleaned) return NaN;
+      const num = parseFloat(cleaned);
+      return Number.isFinite(num) ? num : NaN;
+    }
+
+    function formatRand(num) {
+      if (!Number.isFinite(num) || num <= 0) return "R 0.00";
+      return "R " + num.toLocaleString("en-ZA", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      });
+    }
+
+    function getSelectedChoice() {
+      const checked = document.querySelector('input[name="payoutChoice"]:checked');
+      return checked ? checked.value : "";
+    }
+
+    function showGlobalAlert(type, title, htmlMessage) {
+      formAlert.classList.remove("hidden", "bg-red-50", "border-red-700", "text-red-950", "bg-amber-50", "border-[#B45309]", "text-amber-950");
+      if (type === "duplicate") {
+        formAlert.classList.add("bg-amber-50", "border-[#B45309]", "text-amber-950");
+      } else {
+        formAlert.classList.add("bg-red-50", "border-red-700", "text-red-950");
+      }
+      formAlertTitle.textContent = title;
+      formAlertBody.innerHTML = htmlMessage;
+      formAlert.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+
+    function hideGlobalAlert() {
+      formAlert.classList.add("hidden");
+    }
+
+    function findRecordedEntryByMemberNo(memberInput) {
+      const norm = normalizeMembershipNo(memberInput);
+      if (!norm) return null;
+
+      // Check live portal submissions first
+      const liveMatch = livePortalSubmissions.find(
+        (item) => normalizeMembershipNo(item.membershipNo || item.id || "") === norm
+      );
+      if (liveMatch) return { record: liveMatch, sourceType: "Live Portal" };
+
+      // Check embedded 1,706 Excel records
+      const excelMatch = EMBEDDED_EXCEL_RECORDS.find(
+        (item) => !removedExcelIds.has(item.id) && item.normalizedMembershipNo === norm
+      );
+      if (excelMatch) return { record: excelMatch, sourceType: "1,706-Record Excel Database" };
+
+      return null;
+    }
+
+    function formatAmountBreakdownText(rec) {
+      const parts = [];
+      if (Number(rec.takeAmount) > 0) parts.push(`Take: ${formatRand(Number(rec.takeAmount))}`);
+      if (Number(rec.leaveAmount) > 0) parts.push(`Leave: ${formatRand(Number(rec.leaveAmount))}`);
+      if (Number(rec.loanAmount) > 0) parts.push(`Loan/Lend/Top Up: ${formatRand(Number(rec.loanAmount))}`);
+      if (Number(rec.totalAllocated) > 0) parts.push(`Total: ${formatRand(Number(rec.totalAllocated))}`);
+      return parts.join(" • ");
+    }
+
+    function checkMemberLookupBanner() {
+      const raw = membershipNoInput.value.trim();
+      const norm = normalizeMembershipNo(raw);
+      if (norm.length < 2) {
+        memberLookupBanner.classList.add("hidden");
+        return;
+      }
+
+      const found = findRecordedEntryByMemberNo(raw);
+      memberLookupBanner.classList.remove("hidden", "bg-amber-50", "border-[#B45309]", "text-amber-950", "bg-[#E8F3ED]", "border-[#1B5E3A]", "text-[#1C2522]");
+
+      if (found) {
+        const { record, sourceType } = found;
+        const choiceTitle = CHOICE_CONFIG[record.payoutChoice]?.shortTitle || record.payoutChoiceLabel || record.payoutChoice;
+        const breakdown = formatAmountBreakdownText(record);
+
+        if (!fullNameInput.value.trim() && record.fullName) {
+          fullNameInput.value = record.fullName;
+        }
+        if (!cellphoneNoInput.value.trim() && record.cellphoneNo) {
+          cellphoneNoInput.value = record.cellphoneNo;
+        }
+
+        memberLookupBanner.classList.add("bg-amber-50", "border-[#B45309]", "text-amber-950");
+        memberLookupBanner.innerHTML = `
+          <p class="font-extrabold text-lg text-[#1C2522]">
+            ⚠️ Choice Already Recorded for ${escapeHtml(record.membershipNo)} (${escapeHtml(record.fullName)})
+          </p>
+          <p class="mt-1">
+            Found in <strong>${escapeHtml(sourceType)}</strong> • Ref: <strong>${escapeHtml(record.referenceNo)}</strong>
+          </p>
+          <p class="mt-1 font-bold text-[#1B5E3A]">
+            Recorded Option: ${escapeHtml(choiceTitle)}
+          </p>
+          ${breakdown ? `<p class="mt-1 text-sm font-semibold text-stone-800">${escapeHtml(breakdown)}</p>` : ""}
+        `;
+      } else {
+        memberLookupBanner.classList.add("bg-[#E8F3ED]", "border-[#1B5E3A]", "text-[#1C2522]");
+        memberLookupBanner.innerHTML = `
+          <p class="font-extrabold text-[#1B5E3A]">
+            ✓ No prior choice found yet for ${escapeHtml(formatDisplayMembershipNo(raw))}
+          </p>
+          <p class="text-sm text-stone-700 mt-0.5">
+            You can complete your details and select one of the 7 payout options below.
+          </p>
+        `;
+      }
+      updateLiveSummary();
+    }
+
+    // -------------------------------------------------------------------------
+    // 5. ACCESSIBILITY TEXT SIZE TOGGLE
+    // -------------------------------------------------------------------------
+    const textSizeToggle = document.getElementById("text-size-toggle");
+    const textSizeLabel = document.getElementById("text-size-label");
+    let isExtraLarge = false;
+
+    textSizeToggle.addEventListener("click", () => {
+      isExtraLarge = !isExtraLarge;
+      document.documentElement.classList.toggle("extra-large-text", isExtraLarge);
+      textSizeToggle.setAttribute("aria-pressed", String(isExtraLarge));
+      textSizeLabel.textContent = isExtraLarge
+        ? "Text Size: Extra Large (Tap for Normal)"
+        : "Text Size: Normal (Tap to Enlarge)";
+    });
+
+    // -------------------------------------------------------------------------
+    // 6. LIVE FORM INTERACTIVITY, AUTOMATIC TOTAL & SUMMARY UPDATES
+    // -------------------------------------------------------------------------
+    function getActiveAmounts() {
+      const choiceVal = getSelectedChoice();
+      const cfg = CHOICE_CONFIG[choiceVal];
+      const fields = cfg ? cfg.fields : [];
+
+      const rawTake = fields.includes("take") ? parseRandValue(amountTakeInput.value) : 0;
+      const rawLeave = fields.includes("leave") ? parseRandValue(amountLeaveInput.value) : 0;
+      const rawLoan = fields.includes("loan") ? parseRandValue(amountLoanInput.value) : 0;
+
+      const safeTake = isNaN(rawTake) ? 0 : rawTake;
+      const safeLeave = isNaN(rawLeave) ? 0 : rawLeave;
+      const safeLoan = isNaN(rawLoan) ? 0 : rawLoan;
+      const total = safeTake + safeLeave + safeLoan;
+
+      return {
+        fields,
+        rawTake,
+        rawLeave,
+        rawLoan,
+        safeTake,
+        safeLeave,
+        safeLoan,
+        total
+      };
+    }
+
+    function updateLiveSummary() {
+      const nameVal = fullNameInput.value.trim();
+      const memberVal = formatDisplayMembershipNo(membershipNoInput.value);
+      const cellVal = cellphoneNoInput.value.trim();
+      const choiceVal = getSelectedChoice();
+      const cfg = CHOICE_CONFIG[choiceVal];
+      const { fields, safeTake, safeLeave, safeLoan, total } = getActiveAmounts();
+
+      previewTake.textContent = formatRand(safeTake);
+      previewLeave.textContent = formatRand(safeLeave);
+      previewLoan.textContent = formatRand(safeLoan);
+      totalAllocatedDisplay.textContent = `Total Allocated: ${formatRand(total)}`;
+
+      summaryName.textContent = nameVal || "Not typed yet";
+      summaryMemberNo.textContent = memberVal || "Not typed yet";
+
+      if (cellVal) {
+        summaryCellRow.classList.remove("hidden");
+        summaryCellRow.classList.add("flex");
+        summaryCellNo.textContent = cellVal;
+      } else {
+        summaryCellRow.classList.add("hidden");
+        summaryCellRow.classList.remove("flex");
+      }
+
+      summaryChoice.textContent = cfg ? cfg.shortTitle : "No option selected yet";
+
+      if (fields.length > 0) {
+        summaryBreakdownBox.classList.remove("hidden");
+        summaryRowTake.classList.toggle("hidden", !fields.includes("take"));
+        summaryRowLeave.classList.toggle("hidden", !fields.includes("leave"));
+        summaryRowLoan.classList.toggle("hidden", !fields.includes("loan"));
+
+        summaryValTake.textContent = formatRand(safeTake);
+        summaryValLeave.textContent = formatRand(safeLeave);
+        summaryValLoan.textContent = formatRand(safeLoan);
+        summaryValTotal.textContent = formatRand(total);
+      } else {
+        summaryBreakdownBox.classList.add("hidden");
+      }
+    }
+
+    function handleChoiceChange() {
+      const selected = getSelectedChoice();
+      const cfg = CHOICE_CONFIG[selected];
+      const fields = cfg ? cfg.fields : [];
+
+      optionCards.forEach((card) => {
+        const radio = card.querySelector('input[type="radio"]');
+        const isChecked = radio && radio.checked;
+        card.classList.remove("selected", "selected-warning");
+        if (isChecked) {
+          if (selected === "TAKE_FULL_LEAVE_SOCIETY") {
+            card.classList.add("selected-warning");
+          } else {
+            card.classList.add("selected");
+          }
+        }
+      });
+
+      ["error-take", "error-leave", "error-loan", "error-choice"].forEach((id) => {
+        document.getElementById(id).classList.add("hidden");
+      });
+
+      if (fields.length > 0) {
+        amountsPanel.classList.remove("hidden");
+        groupTake.classList.toggle("hidden", !fields.includes("take"));
+        groupLeave.classList.toggle("hidden", !fields.includes("leave"));
+        groupLoan.classList.toggle("hidden", !fields.includes("loan"));
+
+        let fieldNum = 1;
+        if (fields.includes("take")) {
+          labelTake.innerHTML = `Field ${fieldNum}: Amount to TAKE now (R) <span class="text-red-700">*</span>`;
+          fieldNum++;
+        }
+        if (fields.includes("leave")) {
+          labelLeave.innerHTML = `Field ${fieldNum}: Amount to LEAVE in the Stokvel (R) <span class="text-red-700">*</span>`;
+          fieldNum++;
+        }
+        if (fields.includes("loan")) {
+          labelLoan.innerHTML = `Field ${fieldNum}: Amount to LOAN / LEND / TOP UP (R) <span class="text-red-700">*</span>`;
+        }
+      } else {
+        amountsPanel.classList.add("hidden");
+      }
+
+      updateLiveSummary();
+    }
+
+    membershipNoInput.addEventListener("input", () => {
+      document.getElementById("error-membership-no").classList.add("hidden");
+      checkMemberLookupBanner();
+    });
+
+    fullNameInput.addEventListener("input", () => {
+      document.getElementById("error-full-name").classList.add("hidden");
+      updateLiveSummary();
+    });
+
+    cellphoneNoInput.addEventListener("input", updateLiveSummary);
+    choiceRadios.forEach((radio) => radio.addEventListener("change", handleChoiceChange));
+
+    amountTakeInput.addEventListener("input", () => {
+      document.getElementById("error-take").classList.add("hidden");
+      updateLiveSummary();
+    });
+
+    amountLeaveInput.addEventListener("input", () => {
+      document.getElementById("error-leave").classList.add("hidden");
+      updateLiveSummary();
+    });
+
+    amountLoanInput.addEventListener("input", () => {
+      document.getElementById("error-loan").classList.add("hidden");
+      updateLiveSummary();
+    });
+
+    declareCheckbox.addEventListener("change", () => {
+      document.getElementById("error-declare").classList.add("hidden");
+    });
+
+    // -------------------------------------------------------------------------
+    // 7. VALIDATION & ALREADY-RECORDED CHECK
+    // -------------------------------------------------------------------------
+    function validateForm() {
+      hideGlobalAlert();
+      let isValid = true;
+      let firstErrorElement = null;
+
+      const nameVal = fullNameInput.value.trim();
+      const memberNorm = normalizeMembershipNo(membershipNoInput.value);
+      const choiceVal = getSelectedChoice();
+      const { fields, rawTake, rawLeave, rawLoan } = getActiveAmounts();
+
+      const errMember = document.getElementById("error-membership-no");
+      if (memberNorm.length < 2) {
+        errMember.textContent = "Please type your Lengau People Society membership number.";
+        errMember.classList.remove("hidden");
+        isValid = false;
+        if (!firstErrorElement) firstErrorElement = membershipNoInput;
+      } else {
+        errMember.classList.add("hidden");
+      }
+
+      const errName = document.getElementById("error-full-name");
+      if (nameVal.length < 3) {
+        errName.textContent = "Please type your full name (for example: Mpho Grace Molefe).";
+        errName.classList.remove("hidden");
+        isValid = false;
+        if (!firstErrorElement) firstErrorElement = fullNameInput;
+      } else {
+        errName.classList.add("hidden");
+      }
+
+      const errChoice = document.getElementById("error-choice");
+      if (!choiceVal) {
+        errChoice.textContent = "Please tap on ONE of the 7 payout options above.";
+        errChoice.classList.remove("hidden");
+        isValid = false;
+        if (!firstErrorElement) firstErrorElement = document.getElementById("choice-1");
+      } else {
+        errChoice.classList.add("hidden");
+      }
+
+      if (fields.includes("take")) {
+        const errTake = document.getElementById("error-take");
+        if (isNaN(rawTake) || rawTake <= 0) {
+          errTake.textContent = "Please type a valid Rand amount greater than R 0 for Amount to TAKE.";
+          errTake.classList.remove("hidden");
+          isValid = false;
+          if (!firstErrorElement) firstErrorElement = amountTakeInput;
+        } else {
+          errTake.classList.add("hidden");
+        }
+      }
+
+      if (fields.includes("leave")) {
+        const errLeave = document.getElementById("error-leave");
+        if (isNaN(rawLeave) || rawLeave <= 0) {
+          errLeave.textContent = "Please type a valid Rand amount greater than R 0 for Amount to LEAVE in the Stokvel.";
+          errLeave.classList.remove("hidden");
+          isValid = false;
+          if (!firstErrorElement) firstErrorElement = amountLeaveInput;
+        } else {
+          errLeave.classList.add("hidden");
+        }
+      }
+
+      if (fields.includes("loan")) {
+        const errLoan = document.getElementById("error-loan");
+        if (isNaN(rawLoan) || rawLoan <= 0) {
+          errLoan.textContent = "Please type a valid Rand amount greater than R 0 for Amount to LOAN / LEND / TOP UP.";
+          errLoan.classList.remove("hidden");
+          isValid = false;
+          if (!firstErrorElement) firstErrorElement = amountLoanInput;
+        } else {
+          errLoan.classList.add("hidden");
+        }
+      }
+
+      const errDeclare = document.getElementById("error-declare");
+      if (!declareCheckbox.checked) {
+        errDeclare.textContent = "Please tick the box above to confirm you understand your choice is final.";
+        errDeclare.classList.remove("hidden");
+        isValid = false;
+        if (!firstErrorElement) firstErrorElement = declareCheckbox;
+      } else {
+        errDeclare.classList.add("hidden");
+      }
+
+      if (!isValid) {
+        showGlobalAlert(
+          "error",
+          "Some Information is Missing",
+          "Please check the red messages below to complete all required fields before submitting."
+        );
+        if (firstErrorElement) {
+          firstErrorElement.focus({ preventScroll: true });
+        }
+        return false;
+      }
+
+      // Check if choice is already recorded in live submissions or 1,706 Excel records
+      const foundExisting = findRecordedEntryByMemberNo(membershipNoInput.value);
+      if (foundExisting) {
+        const { record, sourceType } = foundExisting;
+        const breakdown = formatAmountBreakdownText(record);
+        const breakdownHtml = breakdown ? `<br/><strong>Recorded Amounts:</strong> ${escapeHtml(breakdown)}` : "";
+        const recordedLabel = CHOICE_CONFIG[record.payoutChoice]?.shortTitle || record.payoutChoiceLabel || record.payoutChoice;
+
+        showGlobalAlert(
+          "duplicate",
+          "Choice Already Recorded for This Membership Number",
+          `A choice is already on record for Membership No. <strong>${escapeHtml(record.membershipNo)}</strong> (${escapeHtml(record.fullName)}) in the <strong>${escapeHtml(sourceType)}</strong>.<br/><br/>
+          <strong>Recorded Choice:</strong> ${escapeHtml(recordedLabel)}${breakdownHtml}<br/>
+          <strong>Reference Number:</strong> ${escapeHtml(record.referenceNo)}<br/><br/>
+          Because choices are final, duplicate submissions are blocked. If an entry must be corrected, a committee member can remove it in the Option A Committee Portal.`
+        );
+        return false;
+      }
+
+      return true;
+    }
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!validateForm()) return;
+
+      const nameVal = fullNameInput.value.trim();
+      const memberVal = formatDisplayMembershipNo(membershipNoInput.value);
+      const cellVal = cellphoneNoInput.value.trim();
+      const choiceVal = getSelectedChoice();
+      const cfg = CHOICE_CONFIG[choiceVal];
+      const { fields, safeTake, safeLeave, safeLoan, total } = getActiveAmounts();
+
+      modalName.textContent = nameVal;
+      modalMemberNo.textContent = memberVal;
+
+      if (cellVal) {
+        modalCellLine.classList.remove("hidden");
+        modalCellNo.textContent = cellVal;
+      } else {
+        modalCellLine.classList.add("hidden");
+      }
+
+      modalChoice.textContent = cfg.shortTitle;
+
+      if (fields.length > 0) {
+        modalBreakdownBox.classList.remove("hidden");
+        modalLineTake.classList.toggle("hidden", !fields.includes("take"));
+        modalLineLeave.classList.toggle("hidden", !fields.includes("leave"));
+        modalLineLoan.classList.toggle("hidden", !fields.includes("loan"));
+
+        modalValTake.textContent = formatRand(safeTake);
+        modalValLeave.textContent = formatRand(safeLeave);
+        modalValLoan.textContent = formatRand(safeLoan);
+        modalValTotal.textContent = formatRand(total);
+      } else {
+        modalBreakdownBox.classList.add("hidden");
+      }
+
+      confirmModal.classList.remove("hidden");
+      modalCancelBtn.focus();
+    });
+
+    modalCancelBtn.addEventListener("click", () => {
+      confirmModal.classList.add("hidden");
+    });
+
+    // -------------------------------------------------------------------------
+    // 8. SAVE SUBMISSION & DISPLAY RECEIPT
+    // -------------------------------------------------------------------------
+    modalConfirmBtn.addEventListener("click", async () => {
+      modalConfirmBtn.disabled = true;
+      modalConfirmBtn.textContent = "Saving Your Choice...";
+
+      const nameVal = fullNameInput.value.trim();
+      const memberFormatted = formatDisplayMembershipNo(membershipNoInput.value);
+      const memberNorm = normalizeMembershipNo(memberFormatted);
+      const cellVal = cellphoneNoInput.value.trim();
+      const choiceVal = getSelectedChoice();
+      const cfg = CHOICE_CONFIG[choiceVal];
+      const { fields, safeTake, safeLeave, safeLoan, total } = getActiveAmounts();
+
+      const now = new Date();
+      const randomDigits = Math.floor(1000 + Math.random() * 9000);
+      const referenceNo = `LPS-2026-${randomDigits}`;
+      const formattedDate = now.toLocaleString("en-ZA", {
+        dateStyle: "long",
+        timeStyle: "short"
+      });
+
+      const recordPayload = {
+        referenceNo,
+        fullName: nameVal,
+        membershipNo: memberFormatted,
+        normalizedMembershipNo: memberNorm,
+        cellphoneNo: cellVal || "",
+        payoutChoice: choiceVal,
+        payoutChoiceLabel: cfg.shortTitle,
+        takeAmount: fields.includes("take") ? safeTake : 0,
+        leaveAmount: fields.includes("leave") ? safeLeave : 0,
+        loanAmount: fields.includes("loan") ? safeLoan : 0,
+        totalAllocated: total,
+        declaredFinal: true,
+        closingDate: "30th November 2026",
+        source: "Portal Submission",
+        submittedAtIso: now.toISOString(),
+        submittedAtDisplay: formattedDate,
+        submittedAtMs: now.getTime(),
+        submittedByUid: currentUser ? currentUser.uid : "local-session"
+      };
+
+      try {
+        if (db && currentUser) {
+          const docRef = doc(db, "artifacts", appId, "public", "data", "stokvel_payout_choices_2026", memberNorm);
+          await setDoc(docRef, recordPayload);
+        } else {
+          livePortalSubmissions = [
+            { id: memberNorm, ...recordPayload },
+            ...livePortalSubmissions.filter((item) => normalizeMembershipNo(item.membershipNo) !== memberNorm)
+          ];
+          renderAdminRecords();
+        }
+
+        confirmModal.classList.add("hidden");
+        form.classList.add("hidden");
+        receiptView.classList.remove("hidden");
+
+        receiptRef.textContent = referenceNo;
+        receiptTimestamp.textContent = `Submitted on ${formattedDate}`;
+        receiptName.textContent = nameVal;
+        receiptMemberNo.textContent = memberFormatted;
+
+        if (cellVal) {
+          receiptCellRow.classList.remove("hidden");
+          receiptCellRow.classList.add("flex");
+          receiptCellNo.textContent = cellVal;
+        } else {
+          receiptCellRow.classList.add("hidden");
+          receiptCellRow.classList.remove("flex");
+        }
+
+        receiptChoice.textContent = cfg.shortTitle;
+
+        if (fields.length > 0) {
+          receiptBreakdownBox.classList.remove("hidden");
+          receiptRowTake.classList.toggle("hidden", !fields.includes("take"));
+          receiptRowLeave.classList.toggle("hidden", !fields.includes("leave"));
+          receiptRowLoan.classList.toggle("hidden", !fields.includes("loan"));
+
+          receiptValTake.textContent = formatRand(safeTake);
+          receiptValLeave.textContent = formatRand(safeLeave);
+          receiptValLoan.textContent = formatRand(safeLoan);
+          receiptValTotal.textContent = formatRand(total);
+        } else {
+          receiptBreakdownBox.classList.add("hidden");
+        }
+
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } catch (err) {
+        console.error("Error saving choice:", err);
+        confirmModal.classList.add("hidden");
+        showGlobalAlert(
+          "error",
+          "Could Not Save Right Now",
+          "We experienced a connection issue while saving your choice. Please check your connection and tap Submit again."
+        );
+      } finally {
+        modalConfirmBtn.disabled = false;
+        modalConfirmBtn.textContent = "Yes, Submit Final Choice";
+      }
+    });
+
+    document.getElementById("print-receipt-btn").addEventListener("click", () => {
+      window.print();
+    });
+
+    document.getElementById("submit-another-btn").addEventListener("click", () => {
+      form.reset();
+      memberLookupBanner.classList.add("hidden");
+      handleChoiceChange();
+      hideGlobalAlert();
+      receiptView.classList.add("hidden");
+      form.classList.remove("hidden");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // -------------------------------------------------------------------------
+    // 9. COMMITTEE / ADMIN PORTAL (OPTION A ONLY, PIN: 2620)
+    //    - Pagination, Option Filtering, CSV Import, Excel CSV Export & Remove
+    // -------------------------------------------------------------------------
+    const COMMITTEE_PIN = "2620";
+    const PAGE_SIZE = 15;
+
+    const adminSection = document.getElementById("admin-section");
+    const toggleAdminBtn = document.getElementById("toggle-admin-btn");
+    const closeAdminBtn = document.getElementById("close-admin-btn");
+    const adminPinGate = document.getElementById("admin-pin-gate");
+    const adminPinInput = document.getElementById("admin-pin-input");
+    const adminPinError = document.getElementById("admin-pin-error");
+    const unlockAdminBtn = document.getElementById("unlock-admin-btn");
+    const adminDashboard = document.getElementById("admin-dashboard");
+    const adminFeedback = document.getElementById("admin-feedback");
+
+    const adminSearchInput = document.getElementById("admin-search-input");
+    const adminFilterSelect = document.getElementById("admin-filter-select");
+    const importCsvFile = document.getElementById("import-csv-file");
+    const exportCsvBtn = document.getElementById("export-csv-btn");
+    const adminRecordsTbody = document.getElementById("admin-records-tbody");
+    const paginationRangeText = document.getElementById("pagination-range-text");
+    const paginationPageText = document.getElementById("pagination-page-text");
+    const prevPageBtn = document.getElementById("prev-page-btn");
+    const nextPageBtn = document.getElementById("next-page-btn");
+
+    const removeModal = document.getElementById("remove-record-modal");
+    const removeModalDesc = document.getElementById("remove-modal-desc");
+    const cancelRemoveBtn = document.getElementById("cancel-remove-btn");
+    const confirmRemoveBtn = document.getElementById("confirm-remove-btn");
+
+    let isAdminUnlocked = false;
+    let currentPage = 1;
+    let pendingRemoveRecord = null;
+
+    function showAdminFeedback(tone, msg) {
+      adminFeedback.classList.remove("hidden", "bg-[#E8F3ED]", "border-[#1B5E3A]", "text-[#1B5E3A]", "bg-amber-50", "border-[#B45309]", "text-amber-950", "bg-red-50", "border-red-700", "text-red-900");
+      if (tone === "error") {
+        adminFeedback.classList.add("bg-red-50", "border-red-700", "text-red-900");
+      } else if (tone === "warning") {
+        adminFeedback.classList.add("bg-amber-50", "border-[#B45309]", "text-amber-950");
+      } else {
+        adminFeedback.classList.add("bg-[#E8F3ED]", "border-[#1B5E3A]", "text-[#1B5E3A]");
+      }
+      adminFeedback.textContent = msg;
+    }
+
+    toggleAdminBtn.addEventListener("click", () => {
+      adminSection.classList.remove("hidden");
+      adminSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (!isAdminUnlocked) {
+        adminPinInput.focus();
+      } else {
+        renderAdminRecords();
+      }
+    });
+
+    closeAdminBtn.addEventListener("click", () => {
+      adminSection.classList.add("hidden");
+    });
+
+    function attemptAdminUnlock() {
+      if (adminPinInput.value.trim() === COMMITTEE_PIN) {
+        isAdminUnlocked = true;
+        adminPinInput.value = "";
+        adminPinError.classList.add("hidden");
+        adminPinGate.classList.add("hidden");
+        adminDashboard.classList.remove("hidden");
+        currentPage = 1;
+        renderAdminRecords();
+      } else {
+        adminPinError.classList.remove("hidden");
+      }
+    }
+
+    unlockAdminBtn.addEventListener("click", attemptAdminUnlock);
+    adminPinInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        attemptAdminUnlock();
+      }
+    });
+
+    adminSearchInput.addEventListener("input", () => {
+      currentPage = 1;
+      renderAdminRecords();
+    });
+
+    adminFilterSelect.addEventListener("change", () => {
+      currentPage = 1;
+      renderAdminRecords();
+    });
+
+    prevPageBtn.addEventListener("click", () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderAdminRecords();
+      }
+    });
+
+    nextPageBtn.addEventListener("click", () => {
+      currentPage++;
+      renderAdminRecords();
+    });
+
+    function openRemoveModal(record) {
+      pendingRemoveRecord = record;
+      removeModalDesc.innerHTML = `Remove record for <strong>${escapeHtml(record.fullName)}</strong> (${escapeHtml(record.membershipNo)}) • Ref: <strong>${escapeHtml(record.referenceNo || "")}</strong>?`;
+      removeModal.classList.remove("hidden");
+      cancelRemoveBtn.focus();
+    }
+
+    cancelRemoveBtn.addEventListener("click", () => {
+      pendingRemoveRecord = null;
+      removeModal.classList.add("hidden");
+    });
+
+    confirmRemoveBtn.addEventListener("click", async () => {
+      if (!pendingRemoveRecord) return;
+      const target = pendingRemoveRecord;
+      confirmRemoveBtn.disabled = true;
+      confirmRemoveBtn.textContent = "Removing...";
+
+      try {
+        if (String(target.id || "").startsWith("EXCEL_")) {
+          removedExcelIds.add(target.id);
+        } else {
+          const normKey = normalizeMembershipNo(target.membershipNo || target.id);
+          if (db && currentUser && normKey) {
+            const docRef = doc(db, "artifacts", appId, "public", "data", "stokvel_payout_choices_2026", normKey);
+            await deleteDoc(docRef);
+          }
+          livePortalSubmissions = livePortalSubmissions.filter(
+            (item) => normalizeMembershipNo(item.membershipNo || item.id) !== normKey
+          );
+        }
+
+        removeModal.classList.add("hidden");
+        pendingRemoveRecord = null;
+        renderAdminRecords();
+        checkMemberLookupBanner();
+        showAdminFeedback("warning", `Removed record for ${target.fullName} (${target.membershipNo}).`);
+      } catch (err) {
+        console.error("Error removing record:", err);
+        showAdminFeedback("error", "Could not remove record. Please try again.");
+      } finally {
+        confirmRemoveBtn.disabled = false;
+        confirmRemoveBtn.textContent = "Yes, Remove Record";
+      }
+    });
+
+    function renderAdminRecords() {
+      if (!isAdminUnlocked) return;
+
+      const optionARecords = getOptionARecords();
+
+      document.getElementById("stat-total").textContent = optionARecords.length.toLocaleString("en-ZA");
+      document.getElementById("stat-opt-1").textContent = optionARecords.filter((s) => s.payoutChoice === "TAKE_FULL_LEAVE_SOCIETY").length.toLocaleString("en-ZA");
+      document.getElementById("stat-opt-2").textContent = optionARecords.filter((s) => s.payoutChoice === "TAKE_SOME_LEAVE_SOME").length.toLocaleString("en-ZA");
+      document.getElementById("stat-opt-3").textContent = optionARecords.filter((s) => s.payoutChoice === "TAKE_LEAVE_LOAN").length.toLocaleString("en-ZA");
+      document.getElementById("stat-opt-4").textContent = optionARecords.filter((s) => s.payoutChoice === "LEAVE_FULL").length.toLocaleString("en-ZA");
+      document.getElementById("stat-opt-5").textContent = optionARecords.filter((s) => s.payoutChoice === "LEAVE_SOME_LOAN_SOME").length.toLocaleString("en-ZA");
+      document.getElementById("stat-opt-6").textContent = optionARecords.filter((s) => s.payoutChoice === "TAKE_SOME_LOAN_SOME").length.toLocaleString("en-ZA");
+      document.getElementById("stat-opt-7").textContent = optionARecords.filter((s) => s.payoutChoice === "LOAN_LEND_TOPUP_FULL").length.toLocaleString("en-ZA");
+
+      const term = adminSearchInput.value.trim().toLowerCase();
+      const optionFilter = adminFilterSelect.value;
+
+      const filtered = optionARecords.filter((item) => {
+        const matchesOption = optionFilter === "ALL" || item.payoutChoice === optionFilter;
+        const matchesTerm = !term || (
+          (item.fullName || "").toLowerCase().includes(term) ||
+          (item.membershipNo || "").toLowerCase().includes(term) ||
+          (item.cellphoneNo || "").toLowerCase().includes(term) ||
+          (item.referenceNo || "").toLowerCase().includes(term)
+        );
+        return matchesOption && matchesTerm;
+      });
+
+      const totalFiltered = filtered.length;
+      const totalPages = Math.max(1, Math.ceil(totalFiltered / PAGE_SIZE));
+      if (currentPage > totalPages) currentPage = totalPages;
+
+      const startIdx = (currentPage - 1) * PAGE_SIZE;
+      const endIdx = Math.min(startIdx + PAGE_SIZE, totalFiltered);
+      const pageItems = filtered.slice(startIdx, endIdx);
+
+      paginationRangeText.textContent = totalFiltered === 0
+        ? "Showing 0–0 of 0 Option A records"
+        : `Showing ${startIdx + 1}–${endIdx} of ${totalFiltered.toLocaleString("en-ZA")} Option A records`;
+      paginationPageText.textContent = `Page ${currentPage} of ${totalPages}`;
+
+      prevPageBtn.disabled = currentPage <= 1 || totalFiltered === 0;
+      nextPageBtn.disabled = currentPage >= totalPages || totalFiltered === 0;
+
+      if (pageItems.length === 0) {
+        adminRecordsTbody.innerHTML = `
+          <tr>
+            <td colspan="11" class="p-6 text-center text-stone-600 font-medium">
+              No matching Option A records found.
+            </td>
+          </tr>
+        `;
+        return;
+      }
+
+      adminRecordsTbody.innerHTML = pageItems.map((item, idx) => {
+        const takeAmt = Number(item.takeAmount) > 0 ? formatRand(Number(item.takeAmount)) : "—";
+        const leaveAmt = Number(item.leaveAmount) > 0 ? formatRand(Number(item.leaveAmount)) : "—";
+        const loanAmt = Number(item.loanAmount) > 0 ? formatRand(Number(item.loanAmount)) : "—";
+        const totalAmt = Number(item.totalAllocated) > 0 ? formatRand(Number(item.totalAllocated)) : "Full / N/A";
+        const shortLabel = CHOICE_CONFIG[item.payoutChoice]?.shortTitle || item.payoutChoiceLabel || item.payoutChoice;
+
+        return `
+          <tr class="hover:bg-stone-50">
+            <td class="p-3 font-bold text-[#B45309] whitespace-nowrap">${escapeHtml(item.referenceNo || "")}</td>
+            <td class="p-3 font-extrabold whitespace-nowrap">${escapeHtml(item.membershipNo || "")}</td>
+            <td class="p-3 font-semibold">${escapeHtml(item.fullName || "")}</td>
+            <td class="p-3 text-stone-700 whitespace-nowrap">${escapeHtml(item.cellphoneNo || "—")}</td>
+            <td class="p-3 text-[#1B5E3A] font-bold">${escapeHtml(shortLabel)}</td>
+            <td class="p-3 font-bold whitespace-nowrap">${escapeHtml(takeAmt)}</td>
+            <td class="p-3 font-bold whitespace-nowrap">${escapeHtml(leaveAmt)}</td>
+            <td class="p-3 font-bold whitespace-nowrap">${escapeHtml(loanAmt)}</td>
+            <td class="p-3 font-extrabold text-[#1C2522] whitespace-nowrap">${escapeHtml(totalAmt)}</td>
+            <td class="p-3 text-stone-600 whitespace-nowrap">${escapeHtml(item.submittedAtDisplay || "")}</td>
+            <td class="p-3 text-center whitespace-nowrap">
+              <button
+                type="button"
+                data-row-idx="${idx}"
+                class="remove-row-btn px-3 py-1.5 rounded-lg bg-red-50 hover:bg-red-700 text-red-700 hover:text-white border border-red-400 font-bold text-xs transition cursor-pointer"
+              >
+                Remove
+              </button>
+            </td>
+          </tr>
+        `;
+      }).join("");
+
+      adminRecordsTbody.querySelectorAll(".remove-row-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const i = Number(btn.getAttribute("data-row-idx"));
+          if (pageItems[i]) {
+            openRemoveModal(pageItems[i]);
+          }
+        });
+      });
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    // -------------------------------------------------------------------------
+    // 10. CSV IMPORT & EXCEL-COMPATIBLE CSV EXPORT (sep=, + NUMERIC COLUMNS)
+    // -------------------------------------------------------------------------
+    function parseCsvLine(line, delimiter = ",") {
+      const cells = [];
+      let current = "";
+      let inQuotes = false;
+
+      for (let i = 0; i < line.length; i++) {
+        const ch = line[i];
+        if (ch === '"') {
+          if (inQuotes && line[i + 1] === '"') {
+            current += '"';
+            i++;
+          } else {
+            inQuotes = !inQuotes;
+          }
+        } else if (ch === delimiter && !inQuotes) {
+          cells.push(current.trim());
+          current = "";
+        } else {
+          current += ch;
+        }
+      }
+      cells.push(current.trim());
+      return cells;
+    }
+
+    function mapImportedChoice(rawChoice, rawDesc) {
+      const upper = String(rawChoice || "").trim().toUpperCase();
+      if (CHOICE_CONFIG[upper]) return upper;
+
+      const combined = `${upper} ${String(rawDesc || "").toLowerCase()}`;
+      if (combined.includes("option 1") || combined.includes("leaving the society")) return "TAKE_FULL_LEAVE_SOCIETY";
+      if (combined.includes("option 2") || (combined.includes("take some") && combined.includes("leave some") && !combined.includes("loan"))) return "TAKE_SOME_LEAVE_SOME";
+      if (combined.includes("option 3") || (combined.includes("take") && combined.includes("leave") && combined.includes("loan"))) return "TAKE_LEAVE_LOAN";
+      if (combined.includes("option 4") || combined.includes("leave full")) return "LEAVE_FULL";
+      if (combined.includes("option 5") || (combined.includes("leave some") && combined.includes("loan"))) return "LEAVE_SOME_LOAN_SOME";
+      if (combined.includes("option 6") || (combined.includes("take some") && combined.includes("loan"))) return "TAKE_SOME_LOAN_SOME";
+      if (combined.includes("option 7") || combined.includes("full amount to the loan") || combined.includes("loan_lend_topup_full")) return "LOAN_LEND_TOPUP_FULL";
+      return "LEAVE_FULL";
+    }
+
+    importCsvFile.addEventListener("change", async (e) => {
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+
+      try {
+        const text = await file.text();
+        const lines = text
+          .replace(/^\uFEFF/, "")
+          .split(/\r?\n/)
+          .map((l) => l.trim())
+          .filter((l) => l.length > 0 && !/^sep=/i.test(l));
+
+        if (lines.length < 2) {
+          showAdminFeedback("warning", "CSV file has no data rows to import.");
+          importCsvFile.value = "";
+          return;
+        }
+
+        const delimiter = (lines[0].match(/;/g) || []).length > (lines[0].match(/,/g) || []).length ? ";" : ",";
+        const headers = parseCsvLine(lines[0], delimiter).map((h) => h.toLowerCase());
+
+        const findIdx = (terms, fallback) => {
+          const idx = headers.findIndex((h) => terms.some((t) => h.includes(t)));
+          return idx !== -1 ? idx : fallback;
+        };
+
+        const idxRef = findIdx(["ref"], 0);
+        const idxMember = findIdx(["membership", "member no"], 1);
+        const idxName = findIdx(["full name", "name"], 2);
+        const idxCell = findIdx(["cell", "phone"], 3);
+        const idxChoice = findIdx(["choice code", "option", "choice"], 4);
+        const idxDesc = findIdx(["description", "choice label"], 5);
+        const idxTake = findIdx(["take"], 6);
+        const idxLeave = findIdx(["leave"], 7);
+        const idxLoan = findIdx(["loan", "lend", "top up"], 8);
+        const idxTotal = findIdx(["total"], 9);
+
+        let importedCount = 0;
+
+        for (let i = 1; i < lines.length; i++) {
+          const cols = parseCsvLine(lines[i], delimiter);
+          const rawMember = (cols[idxMember] || "").trim();
+          const nameVal = (cols[idxName] || "").trim();
+          if (!rawMember || !nameVal) continue;
+
+          const memberFormatted = formatDisplayMembershipNo(rawMember);
+          const memberNorm = normalizeMembershipNo(memberFormatted);
+          const choiceKey = mapImportedChoice(cols[idxChoice], cols[idxDesc]);
+          const cfg = CHOICE_CONFIG[choiceKey];
+
+          const pTake = parseRandValue(cols[idxTake]);
+          const pLeave = parseRandValue(cols[idxLeave]);
+          const pLoan = parseRandValue(cols[idxLoan]);
+          const pTotal = parseRandValue(cols[idxTotal]);
+
+          const safeTake = isNaN(pTake) ? 0 : pTake;
+          const safeLeave = isNaN(pLeave) ? 0 : pLeave;
+          const safeLoan = isNaN(pLoan) ? 0 : pLoan;
+          const totalVal = !isNaN(pTotal) && pTotal > 0 ? pTotal : safeTake + safeLeave + safeLoan;
+
+          const nowMs = Date.now() + i;
+          const importedRecord = {
+            id: memberNorm,
+            referenceNo: (cols[idxRef] || "").trim() || `IMP-2026-${String(i).padStart(4, "0")}`,
+            fullName: nameVal,
+            membershipNo: memberFormatted,
+            normalizedMembershipNo: memberNorm,
+            cellphoneNo: (cols[idxCell] || "").trim(),
+            payoutChoice: choiceKey,
+            payoutChoiceLabel: cfg.shortTitle,
+            takeAmount: safeTake,
+            leaveAmount: safeLeave,
+            loanAmount: safeLoan,
+            totalAllocated: totalVal,
+            declaredFinal: true,
+            closingDate: "30th November 2026",
+            source: "CSV Import",
+            submittedAtIso: new Date(nowMs).toISOString(),
+            submittedAtDisplay: new Date(nowMs).toLocaleString("en-ZA", { dateStyle: "medium", timeStyle: "short" }),
+            submittedAtMs: nowMs,
+            submittedByUid: currentUser ? currentUser.uid : "csv-import"
+          };
+
+          if (db && currentUser) {
+            const docRef = doc(db, "artifacts", appId, "public", "data", "stokvel_payout_choices_2026", memberNorm);
+            await setDoc(docRef, importedRecord);
+          }
+
+          livePortalSubmissions = [
+            importedRecord,
+            ...livePortalSubmissions.filter((item) => normalizeMembershipNo(item.membershipNo) !== memberNorm)
+          ];
+          importedCount++;
+        }
+
+        currentPage = 1;
+        renderAdminRecords();
+        checkMemberLookupBanner();
+        showAdminFeedback("success", `Imported ${importedCount} record(s) into Option A.`);
+      } catch (err) {
+        console.error("CSV import error:", err);
+        showAdminFeedback("error", "Could not import CSV file. Please check the file format and try again.");
+      } finally {
+        importCsvFile.value = "";
+      }
+    });
+
+    exportCsvBtn.addEventListener("click", () => {
+      const optionARecords = getOptionARecords();
+      if (optionARecords.length === 0) {
+        showAdminFeedback("warning", "There are no Option A records to export.");
+        return;
+      }
+
+      const headers = [
+        "Reference Number",
+        "Membership Number",
+        "Full Name",
+        "Cellphone Number",
+        "Payout Choice Code",
+        "Payout Choice Description",
+        "Take Amount",
+        "Leave Amount",
+        "Loan Lend Top Up Amount",
+        "Total Allocated",
+        "Declared Final",
+        "Closing Date",
+        "Submitted Date"
+      ];
+
+      const escapeCsv = (val) => `"${String(val ?? "").replace(/"/g, '""')}"`;
+      const cleanNum = (val) => {
+        const n = Number(val);
+        return Number.isFinite(n) && n > 0 ? n.toFixed(2) : "0.00";
+      };
+
+      const rows = optionARecords.map((item) => {
+        const tNum = Number(item.takeAmount) || 0;
+        const lNum = Number(item.leaveAmount) || 0;
+        const lnNum = Number(item.loanAmount) || 0;
+        const totNum = Number(item.totalAllocated) > 0 ? Number(item.totalAllocated) : tNum + lNum + lnNum;
+
+        return [
+          escapeCsv(item.referenceNo || ""),
+          escapeCsv(item.membershipNo || ""),
+          escapeCsv(item.fullName || ""),
+          escapeCsv(item.cellphoneNo || ""),
+          escapeCsv(item.payoutChoice || ""),
+          escapeCsv(CHOICE_CONFIG[item.payoutChoice]?.shortTitle || item.payoutChoiceLabel || item.payoutChoice || ""),
+          cleanNum(tNum),
+          cleanNum(lNum),
+          cleanNum(lnNum),
+          cleanNum(totNum),
+          escapeCsv(item.declaredFinal ? "Yes" : "No"),
+          escapeCsv(item.closingDate || "30th November 2026"),
+          escapeCsv(item.submittedAtDisplay || "")
+        ].join(",");
+      });
+
+      const csvContent = `\uFEFFsep=,\r\n${[headers.map(escapeCsv).join(","), ...rows].join("\r\n")}`;
+      const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "Lengau_People_Society_2025_26_OptionA_Choices.csv");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+
+      showAdminFeedback("success", `Exported ${optionARecords.length.toLocaleString("en-ZA")} Option A record(s) with sep=, and clean numeric columns for Excel.`);
+    });
+
+    // -------------------------------------------------------------------------
+    // 11. INITIALIZE ON LOAD
+    // -------------------------------------------------------------------------
+    window.addEventListener("DOMContentLoaded", () => {
+      initFirebase();
+      updateLiveSummary();
+    });
+  </script>
+</body>
+</html>
